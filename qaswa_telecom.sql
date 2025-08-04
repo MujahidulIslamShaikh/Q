@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 05, 2025 at 09:47 AM
+-- Generation Time: Aug 04, 2025 at 04:09 PM
 -- Server version: 10.4.32-MariaDB
--- PHP Version: 8.1.25
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -77,7 +77,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `username`, `password`, `created_at`) VALUES
-(1, 'admin', '$2y$10$cxTGdcRCSITPjSDig2wEcurP2W.lPifYDYrFWWCBbOY5ejc8RrPsC', '2025-02-19 12:34:58');
+(1, 'admin', '$2y$10$P5GWLVoboUX371VdMOCAruR4qFuYNs5xuXe1KNrgHIsPoenWuaOVe', '2025-02-19 12:34:58');
 
 -- --------------------------------------------------------
 
@@ -120,7 +120,8 @@ CREATE TABLE `blog` (
 
 INSERT INTO `blog` (`id`, `title`, `image`, `description`, `created_at`) VALUES
 (1, 'Beat the Heat: How to Prevent and Fix Mobile Heating Issues Efficiently', '1740555424_dede3ccde16728aa92b7.webp', 'Is your smartphone getting too hot to handle? Overheating is a common issue that can affect your phone’s performance, battery life, and even its safety. Whether you\'re a heavy gamer, a multitasker, or just someone who uses their phone frequently, excessive heat can be frustrating. But don’t worry—this guide will help you prevent and fix mobile heating issues efficiently.\r\n\r\nWhy Do Smartphones Overheat?\r\nBefore we jump into the fixes, let’s understand why mobile devices heat up in the first place:\r\n\r\n✅ Excessive Usage – Running multiple apps or gaming for extended periods can strain the processor.\r\n✅ High Screen Brightness – Keeping your brightness at max drains battery power and generates heat.\r\n✅ Background Apps – Apps running in the background consume processing power and battery, causing heat buildup.\r\n✅ Poor Ventilation – Keeping your phone in tight pockets or under a pillow restricts airflow.\r\n✅ Software or OS Issues – Buggy apps or outdated software can overwork the processor.\r\n✅ Defective Battery or Charger – Using non-certified chargers or faulty batteries can lead to overheating.\r\n\r\nHow to Prevent Mobile Heating Issues\r\n1. Keep Your Phone’s Software Updated\r\n???? Regular software updates optimize battery usage and improve performance, reducing unnecessary heat production.\r\n???? Go to Settings > Software Update and install the latest firmware.\r\n\r\n2. Avoid Overcharging and Use Certified Chargers\r\n???? Overcharging can heat up the battery. Unplug your device once it reaches 80-90% for optimal battery health.\r\n???? Always use original or certified chargers to prevent power fluctuations.\r\n\r\n3. Close Unused Apps & Background Processes\r\n???? Too many open apps cause the processor to work harder. Close them by:\r\n\r\nOn Android: Settings > Apps > Running Apps > Stop\r\nOn iPhone: Double-tap home button or swipe up and close background apps\r\n4. Lower Screen Brightness & Use Dark Mode\r\n???? High brightness increases battery consumption and heat. Reduce it or use auto-brightness mode.\r\n???? Dark mode helps OLED screens consume less power, reducing heat generation.\r\n\r\n5. Keep Your Phone in a Cool, Ventilated Place\r\n???? Avoid placing your phone in direct sunlight, inside a car, or under a pillow while charging.\r\n???? Use phone stands or holders that allow better airflow.\r\n\r\n6. Disable Unused Features\r\n???? Turn off Bluetooth, GPS, NFC, and Mobile Data when not in use.\r\n???? Enable Airplane Mode in poor network areas to prevent the phone from continuously searching for signals.\r\n\r\nHow to Fix an Overheating Phone\r\n1. Remove the Phone Case\r\n???? Cases trap heat—removing them allows the device to cool down faster.\r\n\r\n2. Stop Charging If It’s Hot\r\n???? If your phone is overheating while charging, unplug it and let it cool before resuming.\r\n\r\n3. Use Safe Mode to Identify Problematic Apps\r\n???? Booting your phone into Safe Mode helps identify if an app is causing excessive heating.\r\n\r\nOn Android: Press & hold the Power button > Long-press ‘Power Off’ > Tap ‘Safe Mode’\r\nOn iPhone: Reboot and check if the problem persists before launching apps\r\n4. Restart Your Phone\r\n???? A simple restart closes unnecessary apps and gives your phone a fresh start, reducing heat.\r\n\r\n5. Use Cooling Apps\r\n???? Apps like Cooling Master (Android) help detect and close overheating apps automatically.', '2025-02-22 07:27:50'),
-(2, 'The Most Common Mobile Phone Issues and How to Prevent Them', '1740555430_1b5baf2dee527cd980c3.webp', ' The Most Common Mobile Phone Issues and How to Prevent ThemMobile phones have become an integral part of our lives, serving as not just communication devices but also as cameras, entertainment centers, and productivity tools.', '2025-02-22 07:28:19');
+(2, 'The Most Common Mobile Phone Issues and How to Prevent Them', '1740555430_1b5baf2dee527cd980c3.webp', ' The Most Common Mobile Phone Issues and How to Prevent ThemMobile phones have become an integral part of our lives, serving as not just communication devices but also as cameras, entertainment centers, and productivity tools.', '2025-02-22 07:28:19'),
+(4, 'test', '1741415545_b08fbe5561ab276d90d6.webp', '<p>test</p>', '2025-03-08 06:32:25');
 
 -- --------------------------------------------------------
 
@@ -132,7 +133,7 @@ CREATE TABLE `brands` (
   `id` int(11) NOT NULL,
   `title` varchar(155) NOT NULL,
   `image` varchar(255) NOT NULL,
-  `description` varchar(255) DEFAULT NULL,
+  `description` longtext DEFAULT NULL,
   `order_number` int(11) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -142,10 +143,10 @@ CREATE TABLE `brands` (
 --
 
 INSERT INTO `brands` (`id`, `title`, `image`, `description`, `order_number`, `created_at`) VALUES
-(4, 'Apple', '1740476610_34b0a1d8d5e4a5373b24.png', 'apple brand', 1, '2025-02-20 06:14:56'),
-(6, 'Samsung', '1740476278_540604478d6218f0c046.png', 'Samsung Brand', 2, '2025-02-20 09:29:33'),
-(7, 'Xiaomi', '1740476428_bf28d170099c0d0b128a.png', 'Redmi brand', 4, '2025-02-20 11:33:40'),
-(9, 'Motorola', '1740469089_ab34a007434bc0915cab.png', 'Motorola Brand', 3, '2025-02-25 07:35:41');
+(6, 'Samsung', '1743072450_7a358aa34824ca351b3f.jpg', '<p>Samsung Brand</p>', 2, '2025-02-20 09:29:33'),
+(7, 'Xiaomi', '1743071739_011a67384b9e228a8d1b.jpg', 'Redmi brand', 4, '2025-02-20 11:33:40'),
+(9, 'Motorola', '1740469089_ab34a007434bc0915cab.png', 'Motorola Brand', 3, '2025-02-25 07:35:41'),
+(10, 'Apple hai', '1743073007_fd49d2c11da7da4cdc2f.jpg', '<p>apple</p>', 1, '2025-03-27 10:56:47');
 
 -- --------------------------------------------------------
 
@@ -155,8 +156,11 @@ INSERT INTO `brands` (`id`, `title`, `image`, `description`, `order_number`, `cr
 
 CREATE TABLE `cart` (
   `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
+  `user_id` varchar(50) DEFAULT NULL,
   `service_id` int(11) NOT NULL,
+  `other_service` varchar(555) DEFAULT NULL,
+  `other_brand` varchar(155) DEFAULT NULL,
+  `other_model` varchar(155) DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -202,7 +206,11 @@ CREATE TABLE `enquiry` (
 
 INSERT INTO `enquiry` (`id`, `name`, `email`, `mobile`, `subject`, `message`, `created_at`) VALUES
 (1, 'Momin Affan Ahmed Ayaz Ahmed', 'test@gmail.com', '9876543210', 'Test', 'Testing message...', '2025-03-04 05:57:43'),
-(2, 'Test Name', 'test@gmail.com', '1234567890', 'Test', 'Testing Message', '2025-03-04 06:27:11');
+(2, 'Test Name', 'test@gmail.com', '1234567890', 'Test', 'Testing Message', '2025-03-04 06:27:11'),
+(3, 'Momin Affan Ahmed Ayaz Ahmed', 'test@gmail.com', '9876543210', 'Test', 'Testing msg', '2025-03-05 10:22:07'),
+(4, 'Tabish', 'test@gmail.com', '9955115599', 'Test', 'Tset Msg', '2025-03-05 12:26:49'),
+(5, 'Momin', 'altamash@peaceinfotech.com', '9876543210', 'Test', 'Testing Message', '2025-03-10 08:24:44'),
+(6, '', 'vosibar205@calorpg.com', '9876543210', 'Repair', 'Test', '2025-06-16 09:32:00');
 
 -- --------------------------------------------------------
 
@@ -233,6 +241,7 @@ CREATE TABLE `faq` (
   `id` int(11) NOT NULL,
   `question` varchar(255) NOT NULL,
   `answer` longtext NOT NULL,
+  `type` varchar(55) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -240,12 +249,13 @@ CREATE TABLE `faq` (
 -- Dumping data for table `faq`
 --
 
-INSERT INTO `faq` (`id`, `question`, `answer`, `created_at`) VALUES
-(1, 'What types of mobile repairs do you offer?', 'We provide repairs for various mobile issues, including screen replacement, battery replacement, charging port repair, water damage repair, and software troubleshooting.', '2025-03-04 09:56:16'),
-(2, 'Do you repair all smartphone brands?', 'Yes! We repair popular brands like Apple, Samsung, OnePlus, Xiaomi, Oppo, Vivo, Realme, Google Pixel, and more.', '2025-03-04 09:56:44'),
-(3, 'How long does a typical repair take?', 'Most repairs, such as screen or battery replacements, take 30-60 minutes. However, complex repairs like motherboard issues may take 24-48 hours.', '2025-03-04 09:57:00'),
-(4, 'Do you offer doorstep mobile repair services?', 'Yes! We offer on-site repairs for select services. You can book an appointment, and our technician will visit your location.', '2025-03-04 09:57:18'),
-(5, 'Is my data safe during the repair?', 'Absolutely! We take your data privacy seriously. However, we recommend backing up your important data before handing over your device.', '2025-03-04 09:57:53');
+INSERT INTO `faq` (`id`, `question`, `answer`, `type`, `created_at`) VALUES
+(1, 'What types of mobile repairs do you offer?', 'We provide repairs for various mobile issues, including screen replacement, battery replacement, charging port repair, water damage repair, and software troubleshooting.', 'Service', '2025-03-04 09:56:16'),
+(2, 'Do you repair all smartphone brands?', 'Yes! We repair popular brands like Apple, Samsung, OnePlus, Xiaomi, Oppo, Vivo, Realme, Google Pixel, and more.', 'Home', '2025-03-04 09:56:44'),
+(3, 'How long does a typical repair take?', 'Most repairs, such as screen or battery replacements, take 30-60 minutes. However, complex repairs like motherboard issues may take 24-48 hours.', 'Home', '2025-03-04 09:57:00'),
+(4, 'Do you offer doorstep mobile repair services?', 'Yes! We offer on-site repairs for select services. You can book an appointment, and our technician will visit your location.', 'Service', '2025-03-04 09:57:18'),
+(5, 'Is my data safe during the repair?', 'Absolutely! We take your data privacy seriously. However, we recommend backing up your important data before handing over your device.', 'Home', '2025-03-04 09:57:53'),
+(7, 'Is my data safe during the repair?', 'Testing Answer', 'Service', '2025-03-29 06:55:24');
 
 -- --------------------------------------------------------
 
@@ -256,6 +266,7 @@ INSERT INTO `faq` (`id`, `question`, `answer`, `created_at`) VALUES
 CREATE TABLE `gallery` (
   `id` int(11) NOT NULL,
   `image` varchar(155) NOT NULL,
+  `title` varchar(155) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -263,11 +274,13 @@ CREATE TABLE `gallery` (
 -- Dumping data for table `gallery`
 --
 
-INSERT INTO `gallery` (`id`, `image`, `created_at`) VALUES
-(4, '1740568307_54b56edf4397f9a21849.webp', '2025-02-26 11:11:47'),
-(5, '1740568311_fd11fc63e0f9983623df.png', '2025-02-26 11:11:51'),
-(6, '1740568316_2461e4d7256554132bde.png', '2025-02-26 11:11:56'),
-(7, '1740568320_34f603bb8cb7882dae3d.png', '2025-02-26 11:12:00');
+INSERT INTO `gallery` (`id`, `image`, `title`, `created_at`) VALUES
+(14, '1741330618_51f9facd1e8aea7064f5.webp', 'Gallery 1', '2025-03-07 06:56:58'),
+(15, '1741330627_2455525fa13a634fda9a.webp', 'Gallery 2', '2025-03-07 06:57:07'),
+(16, '1741330636_40a87226f896f45b29ff.webp', 'Gallery 3', '2025-03-07 06:57:16'),
+(17, '1741330646_573c2ef5e16891608f4a.webp', 'Gallery 4', '2025-03-07 06:57:26'),
+(18, '1741330653_195a9a8e0efd8f3e7884.webp', 'Gallery 5', '2025-03-07 06:57:33'),
+(19, '1741330665_b31985793e1c7923a4e2.webp', 'Gallery 6', '2025-03-07 06:57:45');
 
 -- --------------------------------------------------------
 
@@ -322,7 +335,8 @@ CREATE TABLE `models` (
   `title` varchar(155) NOT NULL,
   `image` varchar(255) NOT NULL,
   `order_number` int(11) NOT NULL,
-  `description` varchar(255) DEFAULT NULL,
+  `type` varchar(100) NOT NULL DEFAULT 'Mobile',
+  `description` longtext DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -330,12 +344,13 @@ CREATE TABLE `models` (
 -- Dumping data for table `models`
 --
 
-INSERT INTO `models` (`id`, `brand_id`, `title`, `image`, `order_number`, `description`, `created_at`) VALUES
-(1, 4, 'Apple Model', '1740050763_1632d6ec90a42e8d6019.png', 1, 'ipad', '2025-02-20 11:26:03'),
-(2, 7, 'Redmi 8', '1740051274_76445bbda00ffe038ad9.png', 4, 'Redmi 8 mobile', '2025-02-20 11:34:34'),
-(3, 6, 'Samsung s24', '1740054784_060841accf0f9225904f.png', 3, 'Samsung s24 mobile', '2025-02-20 12:33:04'),
-(5, 4, 'Apple 15 Pro', '1740655434_ce6caff5050dab2a8b46.jpeg', 2, 'Apple 15 Pro', '2025-02-27 11:23:54'),
-(6, 4, 'Apple 15', '1740656166_615442051484de3a8d24.jpeg', 2, '', '2025-02-27 11:36:06');
+INSERT INTO `models` (`id`, `brand_id`, `title`, `image`, `order_number`, `type`, `description`, `created_at`) VALUES
+(21, 10, 'iPhone 15 Pro Max', '1743073105_08b426279966ccb49c8d.png', 1, 'Mobile', '<p>Testing</p>', '2025-03-27 10:58:25'),
+(22, 10, 'iPhone 16', '1743073105_2079be1db2fbdb993f8e.png', 2, 'Mobile', '', '2025-03-27 10:58:25'),
+(23, 9, 'Moto Edge 50 Pro', '1743158426_7335398591cb1bd15de2.png', 1, 'Mobile', '<p>test</p>', '2025-03-28 10:40:26'),
+(24, 9, 'Moto Edge 50', '1743158426_a751b3d08bcbf28d7e66.png', 2, 'Mobile', 'test1', '2025-03-28 10:40:26'),
+(25, 6, 'S1', '1743770603_5f532934017c22167d3e.png', 50, 'Mobile', '', '2025-04-04 12:43:23'),
+(26, 6, 'S1dd fd', '1743770603_e54c6745bb2692dc6e7c.jpg', 51, 'Mobile', '', '2025-04-04 12:43:23');
 
 -- --------------------------------------------------------
 
@@ -345,23 +360,45 @@ INSERT INTO `models` (`id`, `brand_id`, `title`, `image`, `order_number`, `descr
 
 CREATE TABLE `orders` (
   `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `repair_date` date NOT NULL,
-  `repair_time` time NOT NULL,
-  `repair_type` varchar(155) NOT NULL,
+  `user_id` varchar(50) NOT NULL,
+  `repair_date` date DEFAULT NULL,
+  `repair_time` time DEFAULT NULL,
+  `repair_type` varchar(155) DEFAULT NULL,
   `total_amount` decimal(10,2) NOT NULL,
   `status` varchar(55) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+  `reason_for_reschedule` varchar(255) DEFAULT NULL,
+  `cancel_reason` varchar(255) DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `orders`
 --
 
-INSERT INTO `orders` (`id`, `user_id`, `repair_date`, `repair_time`, `repair_type`, `total_amount`, `status`, `created_at`) VALUES
-(4, 6, '2025-03-06', '12:15:00', 'Doorstep Repair', 28998.00, 'Order Placed', '2025-03-03 06:39:47'),
-(5, 6, '2025-03-10', '18:50:00', 'Pick and drop', 17849.00, 'Order Placed', '2025-03-03 09:12:15'),
-(6, 6, '2025-03-05', '14:52:00', 'Pick and drop', 699.00, 'Order Cancelled', '2025-03-03 09:22:20');
+INSERT INTO `orders` (`id`, `user_id`, `repair_date`, `repair_time`, `repair_type`, `total_amount`, `status`, `reason_for_reschedule`, `cancel_reason`, `created_at`, `updated_at`) VALUES
+(142, '234801', '2025-06-05', '12:45:00', 'Pick and drop', 29998.00, 'Order Confirmed', 'mori marji', NULL, '2025-06-03 07:09:02', '2025-06-03 07:09:02'),
+(143, '234801', NULL, NULL, NULL, 9999.00, 'Order Placed', NULL, NULL, '2025-06-04 06:14:12', '2025-06-04 06:14:12'),
+(144, '234801', NULL, NULL, NULL, 0.00, 'Order Placed', NULL, NULL, '2025-06-04 06:47:58', '2025-06-04 06:47:58'),
+(145, '234801', NULL, NULL, NULL, 0.00, 'Order Placed', NULL, NULL, '2025-06-04 06:59:44', '2025-06-04 06:59:44'),
+(146, '234801', NULL, NULL, NULL, 0.00, 'Order Placed', NULL, NULL, '2025-06-04 07:03:46', '2025-06-04 07:03:46'),
+(147, '234801', NULL, NULL, NULL, 0.00, 'Order Placed', NULL, NULL, '2025-06-04 07:22:32', '2025-06-04 07:22:32'),
+(148, '234801', NULL, NULL, NULL, 0.00, 'Order Placed', NULL, NULL, '2025-06-04 07:27:17', '2025-06-04 07:27:17'),
+(149, '234801', NULL, NULL, NULL, 0.00, 'Order Placed', NULL, NULL, '2025-06-04 09:12:26', '2025-06-04 09:12:26'),
+(150, '234801', NULL, NULL, NULL, 0.00, 'Order Cancelled', NULL, 'mori marzi', '2025-06-11 05:34:43', '2025-06-11 05:34:43'),
+(151, '234801', NULL, NULL, NULL, 0.00, 'Order Placed', NULL, NULL, '2025-06-11 05:36:41', '2025-06-11 05:36:41'),
+(152, '234801', NULL, NULL, NULL, 0.00, 'Order Placed', NULL, NULL, '2025-06-11 10:37:24', '2025-06-11 10:37:24'),
+(153, '234801', NULL, NULL, NULL, 0.00, 'Order Placed', NULL, NULL, '2025-06-11 10:39:01', '2025-06-11 10:39:01'),
+(154, '234801', NULL, NULL, NULL, 0.00, 'Order Placed', NULL, NULL, '2025-06-11 10:42:43', '2025-06-11 10:42:43'),
+(155, '234801', NULL, NULL, NULL, 0.00, 'Order Placed', NULL, NULL, '2025-06-11 10:47:15', '2025-06-11 10:47:15'),
+(156, '234801', NULL, NULL, NULL, 0.00, 'Order Placed', NULL, NULL, '2025-06-11 10:50:52', '2025-06-11 10:50:52'),
+(157, '234801', NULL, NULL, NULL, 0.00, 'Order Placed', NULL, NULL, '2025-06-11 12:33:47', '2025-06-11 12:33:47'),
+(158, '234801', NULL, NULL, NULL, 0.00, 'Order Placed', NULL, NULL, '2025-06-11 12:34:30', '2025-06-11 12:34:30'),
+(159, '234801', NULL, NULL, NULL, 0.00, 'Order Placed', NULL, NULL, '2025-06-11 12:35:14', '2025-06-11 12:35:14'),
+(160, '234801', NULL, NULL, NULL, 0.00, 'Order Placed', NULL, NULL, '2025-06-11 13:02:34', '2025-06-11 13:02:34'),
+(161, '234801', NULL, NULL, NULL, 0.00, 'Order Placed', NULL, NULL, '2025-06-11 13:04:32', '2025-06-11 13:04:32'),
+(162, '234801', NULL, NULL, NULL, 0.00, 'Order Placed', NULL, NULL, '2025-06-12 12:38:45', '2025-06-12 12:38:45'),
+(163, '272054', NULL, NULL, NULL, 0.00, 'Order Placed', NULL, NULL, '2025-07-28 06:55:56', '2025-07-28 06:55:56');
 
 -- --------------------------------------------------------
 
@@ -373,6 +410,10 @@ CREATE TABLE `order_items` (
   `id` int(11) NOT NULL,
   `order_id` int(11) NOT NULL,
   `service_id` int(11) NOT NULL,
+  `other_service` varchar(555) DEFAULT NULL,
+  `other_brand` varchar(155) DEFAULT NULL,
+  `other_model` varchar(155) DEFAULT NULL,
+  `amount` decimal(11,2) DEFAULT 0.00,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -380,12 +421,39 @@ CREATE TABLE `order_items` (
 -- Dumping data for table `order_items`
 --
 
-INSERT INTO `order_items` (`id`, `order_id`, `service_id`, `created_at`) VALUES
-(13, 4, 4, '2025-03-03 06:39:47'),
-(14, 4, 5, '2025-03-03 06:39:47'),
-(15, 5, 5, '2025-03-03 09:12:15'),
-(16, 5, 2, '2025-03-03 09:12:15'),
-(17, 6, 1, '2025-03-03 09:22:20');
+INSERT INTO `order_items` (`id`, `order_id`, `service_id`, `other_service`, `other_brand`, `other_model`, `amount`, `created_at`) VALUES
+(85, 142, 12, '', '', '', 9999.00, '2025-06-03 07:09:02'),
+(86, 142, 13, '', '', '', 19999.00, '2025-06-03 07:09:02'),
+(87, 142, 0, 'Other Service', 'Apple iPhone', 'iPhone 15 Pro Max', 0.00, '2025-06-03 07:09:02'),
+(88, 143, 12, '', '', '', 9999.00, '2025-06-04 06:14:12'),
+(89, 144, 12, '', '', '', 9999.00, '2025-06-04 06:47:58'),
+(90, 144, 13, '', '', '', 19999.00, '2025-06-04 06:47:58'),
+(91, 145, 12, '', '', '', 9999.00, '2025-06-04 06:59:44'),
+(92, 145, 0, 'Other service', 'Apple iPhone', 'iPhone 15 Pro Max', 0.00, '2025-06-04 06:59:44'),
+(93, 146, 13, '', '', '', 19999.00, '2025-06-04 07:03:47'),
+(94, 147, 13, '', '', '', 19999.00, '2025-06-04 07:22:33'),
+(95, 148, 12, '', '', '', 9999.00, '2025-06-04 07:27:17'),
+(96, 149, 12, '', '', '', 9999.00, '2025-06-04 09:12:26'),
+(97, 150, 12, '', '', '', 9999.00, '2025-06-11 05:34:43'),
+(98, 150, 13, '', '', '', 19999.00, '2025-06-11 05:34:43'),
+(99, 150, 0, 'Other Service', 'Apple iPhone', 'iPhone 15 Pro Max', 0.00, '2025-06-11 05:34:43'),
+(100, 151, 0, 'other Service', 'Apple iPhone', 'iPhone 15 Pro Max', 0.00, '2025-06-11 05:36:41'),
+(101, 152, 12, '', '', '', 9999.00, '2025-06-11 10:37:24'),
+(102, 152, 0, 'Other', 'Apple iPhone', 'iPhone 15 Pro Max', 0.00, '2025-06-11 10:37:24'),
+(103, 153, 12, '', '', '', 9999.00, '2025-06-11 10:39:01'),
+(104, 153, 0, 'Other', 'Apple iPhone', 'iPhone 15 Pro Max', 0.00, '2025-06-11 10:39:01'),
+(105, 154, 12, '', '', '', 9999.00, '2025-06-11 10:42:43'),
+(106, 155, 12, '', '', '', 9999.00, '2025-06-11 10:47:15'),
+(107, 156, 12, '', '', '', 9999.00, '2025-06-11 10:50:52'),
+(108, 156, 0, 'other', 'Apple iPhone', 'iPhone 15 Pro Max', 0.00, '2025-06-11 10:50:52'),
+(109, 157, 13, '', '', '', 19999.00, '2025-06-11 12:33:47'),
+(110, 157, 12, '', '', '', 9999.00, '2025-06-11 12:33:47'),
+(111, 158, 13, '', '', '', 19999.00, '2025-06-11 12:34:30'),
+(112, 159, 12, '', '', '', 9999.00, '2025-06-11 12:35:14'),
+(113, 160, 13, '', '', '', 19999.00, '2025-06-11 13:02:34'),
+(114, 161, 13, '', '', '', 19999.00, '2025-06-11 13:04:32'),
+(115, 162, 14, '', 'Apple iPhone', 'iPhone 15 Pro Max', 0.00, '2025-06-12 12:38:45'),
+(116, 163, 13, '', 'Samsung', 'S1dd fd', 19999.00, '2025-07-28 06:55:56');
 
 -- --------------------------------------------------------
 
@@ -430,10 +498,12 @@ CREATE TABLE `services` (
 --
 
 INSERT INTO `services` (`id`, `brand_id`, `model_id`, `title`, `image`, `main_price`, `discounted_price`, `percent_off`, `description`, `created_at`) VALUES
-(1, 4, 1, 'Display Service', '1740131470_de1d41b45ad909fffa1c.png', 999.00, 699.00, 30, 'Display Service', '2025-02-21 09:51:10'),
-(2, 7, 2, 'Battery Issues', '1740142207_c7f2b0c76342bb12be77.png', 1100.00, 850.00, 23, 'Battery Issues', '2025-02-21 10:03:01'),
-(4, 4, 5, 'Back Glass Broken', '1740659901_73e94eb55fe624639cff.jpeg', 15000.00, 11999.00, 20, '', '2025-02-27 12:38:21'),
-(5, 4, 5, ' Display Touch Glass Broken', '1740659966_c1267093b150090ae718.png', 20000.00, 16999.00, 15, '', '2025-02-27 12:39:26');
+(12, 10, 21, 'Back Glass Broken', '1743073190_be99f3a84658db74873c.png', 15000.00, 9999.00, 33, 'Test', '2025-03-27 10:59:50'),
+(13, 10, 21, 'Display Damaged', '1743073190_5c7c7b47b55420012be3.png', 25000.00, 19999.00, 20, 'Test001', '2025-03-27 10:59:50'),
+(14, 6, 25, 'Testing ', '1749731902_55b47d6aabec8371e97e.png', 0.00, 0.00, 0, '', '2025-06-12 12:38:22'),
+(16, 6, 25, 'SE1', '1750051928_fccf398c20156bbf28d4.png', 0.00, 0.00, 0, '', '2025-06-16 05:32:08'),
+(17, 6, 25, 'SE2', '1750051928_60ea22423486636aadec.png', 0.00, 0.00, 0, '', '2025-06-16 05:32:08'),
+(18, 6, 25, 'SE3', '1750051928_bac370e1f18494c5f3a3.png', 0.00, 0.00, 0, '', '2025-06-16 05:32:08');
 
 -- --------------------------------------------------------
 
@@ -485,14 +555,15 @@ INSERT INTO `testimonial` (`id`, `user_name`, `description`, `created_at`) VALUE
 
 CREATE TABLE `user` (
   `id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
   `name` varchar(155) DEFAULT NULL,
-  `mobile` int(11) DEFAULT NULL,
-  `other_mobile` int(11) DEFAULT NULL,
-  `email` varchar(155) NOT NULL,
+  `mobile` varchar(15) DEFAULT NULL,
+  `other_mobile` varchar(15) DEFAULT NULL,
+  `email` varchar(155) DEFAULT NULL,
   `address` varchar(255) DEFAULT NULL,
   `city` varchar(155) DEFAULT NULL,
   `landmark` varchar(255) DEFAULT NULL,
-  `otp` int(11) NOT NULL,
+  `otp` int(11) DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -500,8 +571,35 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `name`, `mobile`, `other_mobile`, `email`, `address`, `city`, `landmark`, `otp`, `created_at`) VALUES
-(6, 'Momin', 2147483647, 1234567890, 'altamash@peaceinfotech.com', 'Address', 'MALEGAON', 'Landmark', 9331, '2025-02-28 09:33:40');
+INSERT INTO `user` (`id`, `user_id`, `name`, `mobile`, `other_mobile`, `email`, `address`, `city`, `landmark`, `otp`, `created_at`) VALUES
+(3, 234801, 'John Smith.', '9876543210', NULL, NULL, NULL, 'Mumbai', NULL, NULL, '2025-06-03 07:06:11'),
+(4, 272054, 'Abced', '2233445566', NULL, NULL, NULL, 'Mumbai', NULL, NULL, '2025-07-28 06:55:08');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `video`
+--
+
+CREATE TABLE `video` (
+  `id` int(11) NOT NULL,
+  `title` varchar(155) NOT NULL,
+  `url` text NOT NULL,
+  `image` text NOT NULL,
+  `description` longtext NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `video`
+--
+
+INSERT INTO `video` (`id`, `title`, `url`, `image`, `description`, `created_at`) VALUES
+(5, 'Samsung Galaxy Z Fold 4 Blank Display Repair || Hinge Issue', 'https://www.youtube.com/watch?v=ZSupdaZyBsM', '1743680052_704884af3c671f45c9bc.webp', '', '2025-04-03 11:34:12'),
+(6, 'iPhone 15 Pro Max Cracked Display Glass Replacement ', 'https://www.youtube.com/watch?v=47TSAdq9GSw', '1743680144_7e5c119cc9ab3329ff16.webp', '', '2025-04-03 11:35:44'),
+(7, 'Samsung Galaxy Z Fold 4 Display Not Turning On', 'https://www.youtube.com/watch?v=8dx4RYwt5Ak', '1743680178_2e8ebbc80e393e5484a1.webp', '', '2025-04-03 11:36:18'),
+(8, 'iPhone 14 Pro Max Cracked Display Glass & Back Glass Replacement', 'https://www.youtube.com/watch?v=8CIiqglolIU', '1743680250_1ff0e18757e82c32566e.webp', '', '2025-04-03 11:37:30'),
+(9, 'Apple Watch Series 8 Glass Broken Touch Glass Replacement ', 'https://www.youtube.com/watch?v=1V9jjKeTbGo', '1743680307_7d0d2a9204f4636dc490.webp', '', '2025-04-03 11:38:27');
 
 -- --------------------------------------------------------
 
@@ -659,6 +757,12 @@ ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `video`
+--
+ALTER TABLE `video`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `warranty_policy`
 --
 ALTER TABLE `warranty_policy`
@@ -690,25 +794,25 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `banners`
 --
 ALTER TABLE `banners`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `blog`
 --
 ALTER TABLE `blog`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `brands`
 --
 ALTER TABLE `brands`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- AUTO_INCREMENT for table `email`
@@ -720,7 +824,7 @@ ALTER TABLE `email`
 -- AUTO_INCREMENT for table `enquiry`
 --
 ALTER TABLE `enquiry`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `e_waste_policy`
@@ -732,13 +836,13 @@ ALTER TABLE `e_waste_policy`
 -- AUTO_INCREMENT for table `faq`
 --
 ALTER TABLE `faq`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `gallery`
 --
 ALTER TABLE `gallery`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=102;
 
 --
 -- AUTO_INCREMENT for table `issue`
@@ -756,19 +860,19 @@ ALTER TABLE `mobile`
 -- AUTO_INCREMENT for table `models`
 --
 ALTER TABLE `models`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=164;
 
 --
 -- AUTO_INCREMENT for table `order_items`
 --
 ALTER TABLE `order_items`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=117;
 
 --
 -- AUTO_INCREMENT for table `privacy_policy`
@@ -780,7 +884,7 @@ ALTER TABLE `privacy_policy`
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `terms_condition`
@@ -798,7 +902,13 @@ ALTER TABLE `testimonial`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `video`
+--
+ALTER TABLE `video`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `warranty_policy`
