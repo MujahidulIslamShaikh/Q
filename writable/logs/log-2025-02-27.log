@@ -1,0 +1,89 @@
+CRITICAL - 2025-02-27 05:49:50 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 APPPATH\Filters\CustomCSRF.php(24): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(173): App\Filters\CustomCSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('/admin', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-27 05:49:54 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 APPPATH\Filters\CustomCSRF.php(24): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(173): App\Filters\CustomCSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('/admin', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-27 06:09:25 --> Class "App\Controllers\AboutModel" not found
+in APPPATH\Controllers\Home.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->AboutUs()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-27 06:09:55 --> Undefined variable $mobile
+in APPPATH\Views\web\about-us.php on line 4.
+ 1 APPPATH\Views\web\about-us.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mobile', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\about-us.php', 4)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\about-us.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/about-us', [], true)
+ 5 APPPATH\Controllers\Home.php(47): view('web/about-us', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->AboutUs()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-27 11:21:19 --> Undefined variable $ModelsModel
+in APPPATH\Controllers\Home.php on line 57.
+ 1 APPPATH\Controllers\Home.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ModelsModel', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->Models('Samsung')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-27 11:30:36 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 60.
+ 1 APPPATH\Controllers\Home.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 60)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->Models('Apple 15 Pro')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-27 12:28:40 --> Undefined variable $brand
+in APPPATH\Views\web\models.php on line 35.
+ 1 APPPATH\Views\web\models.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $brand', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\models.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\models.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/models', [...], true)
+ 5 APPPATH\Controllers\Home.php(64): view('web/models', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->Models('Apple')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-27 12:28:55 --> Undefined variable $brand
+in APPPATH\Views\web\models.php on line 35.
+ 1 APPPATH\Views\web\models.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $brand', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\models.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\models.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/models', [...], true)
+ 5 APPPATH\Controllers\Home.php(64): view('web/models', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->Models('Apple')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-27 12:29:19 --> Undefined variable $brand
+in APPPATH\Controllers\Home.php on line 64.
+ 1 APPPATH\Controllers\Home.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $brand', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->Models('Apple')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-27 12:45:52 --> Undefined variable $models
+in APPPATH\Views\web\services.php on line 34.
+ 1 APPPATH\Views\web\services.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $models', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\services.php', 34)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\services.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/services', [], true)
+ 5 APPPATH\Controllers\Home.php(83): view('web/services', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->modelServices('Apple', 'Apple 15 Pro')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

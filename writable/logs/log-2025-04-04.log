@@ -1,0 +1,806 @@
+CRITICAL - 2025-04-04 02:19:54 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 02:23:26 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 02:42:05 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 02:44:54 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 02:53:27 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 02:58:57 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 02:59:16 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 02:59:53 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-04 03:24:15 --> mysqli_sql_exception: Column 'email' cannot be null in /home/k76t07qzzuog/public_html/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/k76t07qzzuog/public_html/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/k76t07qzzuog/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/k76t07qzzuog/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/k76t07qzzuog/public_html/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /home/k76t07qzzuog/public_html/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/k76t07qzzuog/public_html/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /home/k76t07qzzuog/public_html/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#7 /home/k76t07qzzuog/public_html/app/Controllers/Home.php(89): CodeIgniter\Model->insert()
+#8 /home/k76t07qzzuog/public_html/system/CodeIgniter.php(932): App\Controllers\Home->userLogin()
+#9 /home/k76t07qzzuog/public_html/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/k76t07qzzuog/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/k76t07qzzuog/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-04-04 03:24:15 --> Column 'email' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Controllers/Home.php(89): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->userLogin()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 03:45:40 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 03:58:50 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 306.
+ 1 SYSTEMPATH/Security/Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify()
+ 3 APPPATH/Filters/CustomCSRF.php(24): CodeIgniter\Filters\CSRF->before()
+ 4 SYSTEMPATH/Filters/Filters.php(173): App\Filters\CustomCSRF->before()
+ 5 SYSTEMPATH/CodeIgniter.php(471): CodeIgniter\Filters\Filters->run()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 03:59:37 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 04:23:36 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 04:28:58 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 04:44:03 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 04:44:09 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 04:46:59 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 04:48:04 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 04:54:06 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-04 04:54:22 --> mysqli_sql_exception: Column 'email' cannot be null in /home/k76t07qzzuog/public_html/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/k76t07qzzuog/public_html/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/k76t07qzzuog/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/k76t07qzzuog/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/k76t07qzzuog/public_html/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /home/k76t07qzzuog/public_html/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/k76t07qzzuog/public_html/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /home/k76t07qzzuog/public_html/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#7 /home/k76t07qzzuog/public_html/app/Controllers/Home.php(89): CodeIgniter\Model->insert()
+#8 /home/k76t07qzzuog/public_html/system/CodeIgniter.php(932): App\Controllers\Home->userLogin()
+#9 /home/k76t07qzzuog/public_html/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/k76t07qzzuog/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/k76t07qzzuog/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-04-04 04:54:22 --> Column 'email' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Controllers/Home.php(89): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->userLogin()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 05:21:59 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 05:27:44 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 05:28:29 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-04 05:30:25 --> mysqli_sql_exception: Column 'email' cannot be null in /home/k76t07qzzuog/public_html/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/k76t07qzzuog/public_html/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/k76t07qzzuog/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/k76t07qzzuog/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/k76t07qzzuog/public_html/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /home/k76t07qzzuog/public_html/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/k76t07qzzuog/public_html/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /home/k76t07qzzuog/public_html/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#7 /home/k76t07qzzuog/public_html/app/Controllers/Home.php(89): CodeIgniter\Model->insert()
+#8 /home/k76t07qzzuog/public_html/system/CodeIgniter.php(932): App\Controllers\Home->userLogin()
+#9 /home/k76t07qzzuog/public_html/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/k76t07qzzuog/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/k76t07qzzuog/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-04-04 05:30:25 --> Column 'email' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Controllers/Home.php(89): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->userLogin()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 05:38:32 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 05:42:21 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 05:46:02 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 05:47:08 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 05:51:02 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 06:08:45 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 06:09:11 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 06:09:40 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 06:09:56 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 06:10:22 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 06:20:24 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 06:21:42 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 06:48:26 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 06:54:30 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 07:01:43 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 07:02:16 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 07:03:35 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 07:11:22 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 07:12:33 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 07:22:19 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 07:38:55 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 07:55:39 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 08:03:22 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 08:23:21 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 08:24:26 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 08:59:48 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 09:32:16 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 09:39:06 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 09:42:49 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 09:55:50 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 10:07:54 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 10:11:32 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 10:27:40 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 10:40:40 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 11:13:33 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 11:14:48 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 11:15:21 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 11:15:58 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-04 11:17:12 --> mysqli_sql_exception: Column 'email' cannot be null in /home/k76t07qzzuog/public_html/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/k76t07qzzuog/public_html/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/k76t07qzzuog/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/k76t07qzzuog/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/k76t07qzzuog/public_html/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /home/k76t07qzzuog/public_html/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/k76t07qzzuog/public_html/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /home/k76t07qzzuog/public_html/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#7 /home/k76t07qzzuog/public_html/app/Controllers/Home.php(89): CodeIgniter\Model->insert()
+#8 /home/k76t07qzzuog/public_html/system/CodeIgniter.php(932): App\Controllers\Home->userLogin()
+#9 /home/k76t07qzzuog/public_html/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/k76t07qzzuog/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/k76t07qzzuog/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-04-04 11:17:12 --> Column 'email' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Controllers/Home.php(89): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->userLogin()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 11:18:57 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 11:19:06 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 11:27:23 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 348.
+ 1 APPPATH/Controllers/Home.php(348): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 11:29:06 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 348.
+ 1 APPPATH/Controllers/Home.php(348): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 11:37:25 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 11:40:11 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 11:47:28 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-04 12:02:25 --> mysqli_sql_exception: Column 'email' cannot be null in /home/k76t07qzzuog/public_html/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/k76t07qzzuog/public_html/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/k76t07qzzuog/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/k76t07qzzuog/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/k76t07qzzuog/public_html/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /home/k76t07qzzuog/public_html/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/k76t07qzzuog/public_html/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /home/k76t07qzzuog/public_html/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#7 /home/k76t07qzzuog/public_html/app/Controllers/Home.php(89): CodeIgniter\Model->insert()
+#8 /home/k76t07qzzuog/public_html/system/CodeIgniter.php(932): App\Controllers\Home->userLogin()
+#9 /home/k76t07qzzuog/public_html/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/k76t07qzzuog/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/k76t07qzzuog/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-04-04 12:02:25 --> Column 'email' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Controllers/Home.php(89): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->userLogin()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 12:03:39 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 12:06:52 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 12:23:30 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 347.
+ 1 APPPATH/Controllers/Home.php(347): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 12:46:35 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 348.
+ 1 APPPATH/Controllers/Home.php(348): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 12:47:42 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 348.
+ 1 APPPATH/Controllers/Home.php(348): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 13:34:04 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 348.
+ 1 APPPATH/Controllers/Home.php(348): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 14:11:35 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 348.
+ 1 APPPATH/Controllers/Home.php(348): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 14:17:51 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 348.
+ 1 APPPATH/Controllers/Home.php(348): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 14:18:03 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 348.
+ 1 APPPATH/Controllers/Home.php(348): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 14:54:56 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 348.
+ 1 APPPATH/Controllers/Home.php(348): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 15:02:04 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 348.
+ 1 APPPATH/Controllers/Home.php(348): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 15:28:50 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 348.
+ 1 APPPATH/Controllers/Home.php(348): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 15:35:53 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 348.
+ 1 APPPATH/Controllers/Home.php(348): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 16:20:58 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 348.
+ 1 APPPATH/Controllers/Home.php(348): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 16:57:45 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 348.
+ 1 APPPATH/Controllers/Home.php(348): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 17:26:25 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 348.
+ 1 APPPATH/Controllers/Home.php(348): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 18:39:26 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 348.
+ 1 APPPATH/Controllers/Home.php(348): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 20:11:22 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 348.
+ 1 APPPATH/Controllers/Home.php(348): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-04-04 20:55:55 --> mysqli_sql_exception: Column 'email' cannot be null in /home/k76t07qzzuog/public_html/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/k76t07qzzuog/public_html/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/k76t07qzzuog/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/k76t07qzzuog/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/k76t07qzzuog/public_html/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+#4 /home/k76t07qzzuog/public_html/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/k76t07qzzuog/public_html/system/BaseModel.php(782): CodeIgniter\Model->doInsert()
+#6 /home/k76t07qzzuog/public_html/system/Model.php(730): CodeIgniter\BaseModel->insert()
+#7 /home/k76t07qzzuog/public_html/app/Controllers/Home.php(89): CodeIgniter\Model->insert()
+#8 /home/k76t07qzzuog/public_html/system/CodeIgniter.php(932): App\Controllers\Home->userLogin()
+#9 /home/k76t07qzzuog/public_html/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/k76t07qzzuog/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/k76t07qzzuog/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-04-04 20:55:55 --> Column 'email' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert()
+ 8 APPPATH/Controllers/Home.php(89): CodeIgniter\Model->insert()
+ 9 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->userLogin()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 21:00:44 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 348.
+ 1 APPPATH/Controllers/Home.php(348): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 21:10:07 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 348.
+ 1 APPPATH/Controllers/Home.php(348): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 21:38:45 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 348.
+ 1 APPPATH/Controllers/Home.php(348): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 22:36:32 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 348.
+ 1 APPPATH/Controllers/Home.php(348): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 23:24:27 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 348.
+ 1 APPPATH/Controllers/Home.php(348): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-04-04 23:51:39 --> Trying to access array offset on null
+in APPPATH/Controllers/Home.php on line 348.
+ 1 APPPATH/Controllers/Home.php(348): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->modelServices()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

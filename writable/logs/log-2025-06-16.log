@@ -1,0 +1,93 @@
+CRITICAL - 2025-06-16 09:23:20 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 APPPATH\Filters\CustomCSRF.php(25): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(173): App\Filters\CustomCSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('/Contact', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-16 09:40:58 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 324.
+ 1 APPPATH\Controllers\Home.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 324)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->appleModels('apple', 'iPad')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-16 09:42:00 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 324.
+ 1 APPPATH\Controllers\Home.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 324)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->appleModels('apple', 'apple watch')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-16 09:42:07 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 324.
+ 1 APPPATH\Controllers\Home.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 324)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->appleModels('Apple', 'apple watch')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-16 09:42:13 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 324.
+ 1 APPPATH\Controllers\Home.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 324)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->appleModels('Apple', 'Apple Watch')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-16 09:42:15 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 324.
+ 1 APPPATH\Controllers\Home.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 324)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->appleModels('Apple', 'Apple Watch')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-16 09:42:16 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 324.
+ 1 APPPATH\Controllers\Home.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 324)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->appleModels('Apple', 'Apple Watch')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-16 09:42:16 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 324.
+ 1 APPPATH\Controllers\Home.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 324)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->appleModels('Apple', 'Apple Watch')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-16 09:42:19 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 324.
+ 1 APPPATH\Controllers\Home.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 324)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->appleModels('Apple', 'Apple Watch')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-16 09:42:20 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 324.
+ 1 APPPATH\Controllers\Home.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 324)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->appleModels('Apple', 'Apple Watch')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-16 09:42:27 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 324.
+ 1 APPPATH\Controllers\Home.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 324)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->appleModels('Apple', 'Apple Watch')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-16 09:42:35 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 324.
+ 1 APPPATH\Controllers\Home.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 324)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->appleModels('Apple', 'iPad')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-16 09:42:41 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Home.php on line 324.
+ 1 APPPATH\Controllers\Home.php(324): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 324)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->appleModels('Apple', 'Apple Watch')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

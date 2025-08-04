@@ -1,0 +1,11 @@
+CRITICAL - 2023-11-09 04:04:04 --> Undefined variable $clients
+in APPPATH/Views/candidate-declaration.php on line 103.
+ 1 APPPATH/Views/candidate-declaration.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $clients', '/home3/reliableverify/public_html/crm/app/Views/candidate-declaration.php', 103)
+ 2 SYSTEMPATH/View/View.php(224): include('/home3/reliableverify/public_html/crm/app/Views/candidate-declaration.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('candidate-declaration', [], true)
+ 5 APPPATH/Controllers/Controllercandinfo.php(757): view('candidate-declaration', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Controllercandinfo->addSignature()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controllercandinfo))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

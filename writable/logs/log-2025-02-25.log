@@ -1,0 +1,11 @@
+CRITICAL - 2025-02-25 07:48:02 --> Attempt to read property "title" on array
+in APPPATH\Views\web\home.php on line 47.
+ 1 APPPATH\Views\web\home.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "title" on array', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\home.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\home.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/home', [], true)
+ 5 APPPATH\Controllers\Home.php(20): view('web/home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,462 @@
+ERROR - 2025-03-03 05:59:34 --> mysqli_sql_exception: Unknown column 'price' in 'field list' in C:\xampp\htdocs\Qaswa\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Qaswa\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `or...', 0)
+#1 C:\xampp\htdocs\Qaswa\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 C:\xampp\htdocs\Qaswa\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 C:\xampp\htdocs\Qaswa\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 C:\xampp\htdocs\Qaswa\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\Qaswa\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\Qaswa\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\Qaswa\app\Controllers\Home.php(311): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(932): App\Controllers\Home->orderConfirm()
+#9 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Qaswa\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2025-03-03 05:59:34 --> Unknown column 'price' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `order_items` (`order_id`, `service_id`, `price`) VALUES (\'1\', \'4\', \'11999.00\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `order_items` (`order_id`, `service_id`, `price`) VALUES (\'1\', \'4\', \'11999.00\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `order_items` (`order_id`, `service_id`, `price`) VALUES (\'1\', \'4\', \'11999.00\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `order_items` (`order_id`, `service_id`, `price`) VALUES (:order_id:, :service_id:, :price:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Home.php(311): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->orderConfirm()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-03-03 06:39:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in C:\xampp\htdocs\Qaswa\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Qaswa\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Qaswa\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Qaswa\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Qaswa\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Qaswa\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Qaswa\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Qaswa\app\Controllers\Home.php(251): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(932): App\Controllers\Home->Checkout()
+#8 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Qaswa\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-03-03 06:39:52 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `services`
+WHERE `id` IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `services`
+WHERE `id` IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `services`
+WHERE `id` IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `services`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(251): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->Checkout()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 08:34:45 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 350.
+ 1 APPPATH\Controllers\Home.php(350): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 350)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->myOrders()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 08:35:04 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 350.
+ 1 APPPATH\Controllers\Home.php(350): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 350)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->myOrders()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 08:52:50 --> Undefined array key "orderItems"
+in APPPATH\Controllers\Home.php on line 356.
+ 1 APPPATH\Controllers\Home.php(356): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "orderItems"', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 356)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->myOrders()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 09:03:37 --> Undefined variable $order
+in APPPATH\Views\web\my-order.php on line 47.
+ 1 APPPATH\Views\web\my-order.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\my-order.php', 47)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\my-order.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/my-order', [], true)
+ 5 APPPATH\Controllers\Home.php(365): view('web/my-order', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->myOrders()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-03-03 09:04:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3 in C:\xampp\htdocs\Qaswa\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Qaswa\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Qaswa\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Qaswa\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Qaswa\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Qaswa\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Qaswa\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Qaswa\app\Controllers\Home.php(354): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(932): App\Controllers\Home->myOrders()
+#8 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Qaswa\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-03-03 09:04:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 3
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `services`
+WHERE `id` IN ()', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `services`
+WHERE `id` IN ()')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `services`
+WHERE `id` IN ()')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `services`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(354): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->myOrders()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-03-03 09:13:52 --> mysqli_sql_exception: Illegal parameter data types int and row for operation '=' in C:\xampp\htdocs\Qaswa\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Qaswa\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `order_i...', 0)
+#1 C:\xampp\htdocs\Qaswa\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `order_i...')
+#2 C:\xampp\htdocs\Qaswa\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `order_i...')
+#3 C:\xampp\htdocs\Qaswa\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `order_i...', Array, false)
+#4 C:\xampp\htdocs\Qaswa\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Qaswa\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Qaswa\app\Controllers\Home.php(355): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(932): App\Controllers\Home->myOrders()
+#8 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Qaswa\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-03-03 09:13:52 --> Illegal parameter data types int and row for operation '='
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `order_items`.*, `services`.`title`, `services`.`brand_id`, `services`.`model_id`
+FROM `order_items`
+LEFT JOIN `services` ON `order_items`.`service_id` = `services`.`id`
+WHERE `order_id` = (\'4\',\'5\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `order_items`.*, `services`.`title`, `services`.`brand_id`, `services`.`model_id`
+FROM `order_items`
+LEFT JOIN `services` ON `order_items`.`service_id` = `services`.`id`
+WHERE `order_id` = (\'4\',\'5\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `order_items`.*, `services`.`title`, `services`.`brand_id`, `services`.`model_id`
+FROM `order_items`
+LEFT JOIN `services` ON `order_items`.`service_id` = `services`.`id`
+WHERE `order_id` = (\'4\',\'5\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `order_items`.*, `services`.`title`, `services`.`brand_id`, `services`.`model_id`
+FROM `order_items`
+LEFT JOIN `services` ON `order_items`.`service_id` = `services`.`id`
+WHERE `order_id` = :order_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(355): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->myOrders()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 09:14:27 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 356.
+ 1 APPPATH\Controllers\Home.php(356): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 356)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->myOrders()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 09:18:13 --> Class "OrderItemModel" not found
+in APPPATH\Views\web\my-order.php on line 43.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/my-order', [], true)
+ 4 APPPATH\Controllers\Home.php(365): view('web/my-order', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->myOrders()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 09:18:52 --> syntax error, unexpected token "use"
+in APPPATH\Views\web\my-order.php on line 42.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/my-order', [], true)
+ 3 APPPATH\Controllers\Home.php(365): view('web/my-order', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->myOrders()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 09:19:15 --> Undefined variable $OrderItemModel
+in APPPATH\Views\web\my-order.php on line 45.
+ 1 APPPATH\Views\web\my-order.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $OrderItemModel', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\my-order.php', 45)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\my-order.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/my-order', [], true)
+ 5 APPPATH\Controllers\Home.php(365): view('web/my-order', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->myOrders()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 09:19:22 --> Undefined constant "App\Models\OrderItemModel"
+in APPPATH\Views\web\my-order.php on line 43.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/my-order', [], true)
+ 4 APPPATH\Controllers\Home.php(365): view('web/my-order', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->myOrders()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 09:20:00 --> syntax error, unexpected token "use"
+in APPPATH\Views\web\my-order.php on line 43.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/my-order', [], true)
+ 3 APPPATH\Controllers\Home.php(365): view('web/my-order', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->myOrders()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 09:21:02 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 940.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(827): CodeIgniter\Database\BaseBuilder->_whereIn('order_id', '4', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(836): CodeIgniter\Database\BaseBuilder->whereIn('order_id', '4')
+ 3 APPPATH\Views\web\my-order.php(48): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\my-order.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/my-order', [], true)
+ 7 APPPATH\Controllers\Home.php(365): view('web/my-order', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->myOrders()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 09:47:02 --> Call to undefined method App\Models\OrderModel::getResult
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Home.php(362): CodeIgniter\Model->__call('getResult', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->orderDetails('4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 09:47:10 --> Call to undefined method App\Models\OrderModel::Result
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Home.php(362): CodeIgniter\Model->__call('Result', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->orderDetails('4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 09:47:44 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::Result()
+in APPPATH\Controllers\Home.php on line 362.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->orderDetails('4')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 09:47:51 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::result()
+in APPPATH\Controllers\Home.php on line 362.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->orderDetails('4')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 09:48:04 --> Call to undefined method App\Models\OrderModel::getRow
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Home.php(362): CodeIgniter\Model->__call('getRow', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->orderDetails('4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 09:48:53 --> Call to undefined method App\Models\OrderModel::row
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Home.php(362): CodeIgniter\Model->__call('row', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->orderDetails('4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 09:49:02 --> Call to undefined method App\Models\OrderModel::getRow
+in SYSTEMPATH\Model.php on line 838.
+ 1 APPPATH\Controllers\Home.php(362): CodeIgniter\Model->__call('getRow', [])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->orderDetails('4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 09:53:07 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 940.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(827): CodeIgniter\Database\BaseBuilder->_whereIn('order_id', '4', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(836): CodeIgniter\Database\BaseBuilder->whereIn('order_id', '4')
+ 3 APPPATH\Controllers\Home.php(363): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->orderDetails('4')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-03-03 09:57:02 --> mysqli_sql_exception: Illegal parameter data types int and row for operation '=' in C:\xampp\htdocs\Qaswa\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Qaswa\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Qaswa\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Qaswa\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Qaswa\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Qaswa\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Qaswa\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Qaswa\app\Controllers\Home.php(363): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(932): App\Controllers\Home->orderDetails('4')
+#8 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Qaswa\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-03-03 09:57:02 --> Illegal parameter data types int and row for operation '='
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `services`
+WHERE `id` = (\'4\',\'5\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `services`
+WHERE `id` = (\'4\',\'5\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `services`
+WHERE `id` = (\'4\',\'5\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `services`
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(363): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->orderDetails('4')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 10:11:09 --> Invalid file: "web/order-details.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('web/order-details.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/order-details', [], true)
+ 3 APPPATH\Controllers\Home.php(366): view('web/order-details', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->orderDetails('4')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 10:34:30 --> Undefined variable $order
+in APPPATH\Views\web\order-details.php on line 20.
+ 1 APPPATH\Views\web\order-details.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\order-details.php', 20)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\order-details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/order-details', [], true)
+ 5 APPPATH\Controllers\Home.php(366): view('web/order-details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->orderDetails('5')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 10:34:50 --> Undefined array key "orders"
+in APPPATH\Controllers\Home.php on line 361.
+ 1 APPPATH\Controllers\Home.php(361): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "orders"', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 361)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->orderDetails('5')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 10:50:02 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 940.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(827): CodeIgniter\Database\BaseBuilder->_whereIn('id', '5', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(836): CodeIgniter\Database\BaseBuilder->whereIn('id', '5')
+ 3 APPPATH\Views\web\order-details.php(52): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\order-details.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/order-details', [], true)
+ 7 APPPATH\Controllers\Home.php(365): view('web/order-details', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->orderDetails('5')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 10:53:10 --> whereIn() expects $values to be of type array or closure
+in SYSTEMPATH\Database\BaseBuilder.php on line 940.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(827): CodeIgniter\Database\BaseBuilder->_whereIn('id', '4', false, 'AND ', null)
+ 2 SYSTEMPATH\Model.php(836): CodeIgniter\Database\BaseBuilder->whereIn('id', '4')
+ 3 APPPATH\Views\web\order-details.php(52): CodeIgniter\Model->__call('whereIn', [...])
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\order-details.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/order-details', [], true)
+ 7 APPPATH\Controllers\Home.php(365): view('web/order-details', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->orderDetails('4')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-03-03 10:57:51 --> mysqli_sql_exception: Unknown column 'services.price' in 'field list' in C:\xampp\htdocs\Qaswa\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Qaswa\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `order_i...', 0)
+#1 C:\xampp\htdocs\Qaswa\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `order_i...')
+#2 C:\xampp\htdocs\Qaswa\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `order_i...')
+#3 C:\xampp\htdocs\Qaswa\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `order_i...', Array, false)
+#4 C:\xampp\htdocs\Qaswa\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Qaswa\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Qaswa\app\Controllers\Home.php(364): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(932): App\Controllers\Home->orderDetails('5')
+#8 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Qaswa\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-03-03 10:57:51 --> Unknown column 'services.price' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `order_items`.*, `services`.`title`, `services`.`brand_id`, `services`.`model_id`, `services`.`price`
+FROM `order_items`
+LEFT JOIN `services` ON `order_items`.`service_id` = `services`.`id`
+WHERE `order_items`.`order_id` = \'5\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `order_items`.*, `services`.`title`, `services`.`brand_id`, `services`.`model_id`, `services`.`price`
+FROM `order_items`
+LEFT JOIN `services` ON `order_items`.`service_id` = `services`.`id`
+WHERE `order_items`.`order_id` = \'5\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `order_items`.*, `services`.`title`, `services`.`brand_id`, `services`.`model_id`, `services`.`price`
+FROM `order_items`
+LEFT JOIN `services` ON `order_items`.`service_id` = `services`.`id`
+WHERE `order_items`.`order_id` = \'5\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `order_items`.*, `services`.`title`, `services`.`brand_id`, `services`.`model_id`, `services`.`price`
+FROM `order_items`
+LEFT JOIN `services` ON `order_items`.`service_id` = `services`.`id`
+WHERE `order_items`.`order_id` = :order_items.order_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(364): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->orderDetails('5')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 11:07:11 --> Undefined array key "title"
+in APPPATH\Views\web\order-details.php on line 50.
+ 1 APPPATH\Views\web\order-details.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "title"', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\order-details.php', 50)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\order-details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/order-details', [], true)
+ 5 APPPATH\Controllers\Home.php(374): view('web/order-details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->orderDetails('4')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 11:22:00 --> Undefined array key "image"
+in APPPATH\Views\web\order-details.php on line 56.
+ 1 APPPATH\Views\web\order-details.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "image"', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\order-details.php', 56)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\order-details.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/order-details', [], true)
+ 5 APPPATH\Controllers\Home.php(374): view('web/order-details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->orderDetails('5')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 11:39:24 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 APPPATH\Filters\CustomCSRF.php(24): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(173): App\Filters\CustomCSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('/cancel-order/6', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-03 12:06:25 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 APPPATH\Filters\CustomCSRF.php(24): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(173): App\Filters\CustomCSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('/cancel-order/6', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

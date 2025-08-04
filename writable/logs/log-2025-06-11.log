@@ -1,0 +1,20 @@
+ERROR - 2025-06-11 05:34:51 --> WhatsApp send failed: 22 : The requested URL returned error: 404
+ERROR - 2025-06-11 05:36:47 --> WhatsApp send failed: 22 : The requested URL returned error: 404
+CRITICAL - 2025-06-11 10:37:30 --> Undefined variable $message
+in APPPATH\Controllers\Home.php on line 733.
+ 1 APPPATH\Controllers\Home.php(733): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 733)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->orderConfirm()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-06-11 11:31:29 --> Undefined array key "model"
+in APPPATH\Views\web\services.php on line 245.
+ 1 APPPATH\Views\web\services.php(245): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "model"', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\services.php', 245)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\services.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/services', [], true)
+ 5 APPPATH\Controllers\Home.php(378): view('web/services', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->modelServices('Apple iPhone', 'iPhone 15 Pro Max')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,301 @@
+CRITICAL - 2025-03-05 05:54:40 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 APPPATH\Filters\CustomCSRF.php(24): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(173): App\Filters\CustomCSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('/admin', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-05 05:54:44 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 APPPATH\Filters\CustomCSRF.php(24): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(173): App\Filters\CustomCSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('/admin', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-03-05 06:14:11 --> mysqli_sql_exception: Unknown column 'brands.title' in 'field list' in C:\xampp\htdocs\Qaswa\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Qaswa\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `orders`...', 0)
+#1 C:\xampp\htdocs\Qaswa\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`...')
+#2 C:\xampp\htdocs\Qaswa\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`...')
+#3 C:\xampp\htdocs\Qaswa\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `orders`...', Array, false)
+#4 C:\xampp\htdocs\Qaswa\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Qaswa\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Qaswa\app\Controllers\Order.php(35): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(932): App\Controllers\Order->index()
+#8 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#9 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Qaswa\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-03-05 06:14:11 --> Unknown column 'brands.title' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `orders`.*, `order_items`.`order_id`, `order_items`.`service_id`, `services`.`title` AS `service_title`, `services`.`discounted_price`, `services`.`main_price`, `services`.`image`, `brands`.`title` AS `brand_title`, `models`.`title` AS `model_title`
+FROM `orders`
+LEFT JOIN `order_items` ON `orders`.`id` = `order_items`.`order_id`
+LEFT JOIN `services` ON `order_items`.`service_id` = `services`.`id`
+ORDER BY `id` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `orders`.*, `order_items`.`order_id`, `order_items`.`service_id`, `services`.`title` AS `service_title`, `services`.`discounted_price`, `services`.`main_price`, `services`.`image`, `brands`.`title` AS `brand_title`, `models`.`title` AS `model_title`
+FROM `orders`
+LEFT JOIN `order_items` ON `orders`.`id` = `order_items`.`order_id`
+LEFT JOIN `services` ON `order_items`.`service_id` = `services`.`id`
+ORDER BY `id` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `orders`.*, `order_items`.`order_id`, `order_items`.`service_id`, `services`.`title` AS `service_title`, `services`.`discounted_price`, `services`.`main_price`, `services`.`image`, `brands`.`title` AS `brand_title`, `models`.`title` AS `model_title`
+FROM `orders`
+LEFT JOIN `order_items` ON `orders`.`id` = `order_items`.`order_id`
+LEFT JOIN `services` ON `order_items`.`service_id` = `services`.`id`
+ORDER BY `id` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `orders`.*, `order_items`.`order_id`, `order_items`.`service_id`, `services`.`title` AS `service_title`, `services`.`discounted_price`, `services`.`main_price`, `services`.`image`, `brands`.`title` AS `brand_title`, `models`.`title` AS `model_title`
+FROM `orders`
+LEFT JOIN `order_items` ON `orders`.`id` = `order_items`.`order_id`
+LEFT JOIN `services` ON `order_items`.`service_id` = `services`.`id`
+ORDER BY `id` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Order.php(35): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Order->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-05 06:22:25 --> Undefined variable $db
+in APPPATH\Controllers\Order.php on line 28.
+ 1 APPPATH\Controllers\Order.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Order.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Order->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-05 06:51:09 --> Undefined array key "id"
+in APPPATH\Controllers\Order.php on line 64.
+ 1 APPPATH\Controllers\Order.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Order.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Order->viewOrder('6')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-05 06:52:36 --> Undefined variable $data
+in APPPATH\Controllers\Order.php on line 66.
+ 1 APPPATH\Controllers\Order.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Order.php', 66)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Order->viewOrder('6')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-05 06:52:52 --> Undefined variable $data
+in APPPATH\Controllers\Order.php on line 64.
+ 1 APPPATH\Controllers\Order.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Order.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Order->viewOrder('6')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-05 06:53:04 --> Undefined array key "id"
+in APPPATH\Controllers\Order.php on line 64.
+ 1 APPPATH\Controllers\Order.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Order.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Order->viewOrder('6')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-05 06:53:22 --> Undefined array key "id"
+in APPPATH\Controllers\Order.php on line 64.
+ 1 APPPATH\Controllers\Order.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Order.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Order->viewOrder('6')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-05 06:54:13 --> Undefined array key "id"
+in APPPATH\Controllers\Order.php on line 64.
+ 1 APPPATH\Controllers\Order.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Order.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Order->viewOrder('6')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-05 06:54:48 --> Undefined array key "id"
+in APPPATH\Controllers\Order.php on line 64.
+ 1 APPPATH\Controllers\Order.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Order.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Order->viewOrder('6')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-05 06:59:05 --> Undefined variable $order
+in APPPATH\Views\admin\view-order-view.php on line 137.
+ 1 APPPATH\Views\admin\view-order-view.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\view-order-view.php', 137)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\view-order-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/view-order-view', [], true)
+ 5 APPPATH\Controllers\Order.php(67): view('admin/view-order-view')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Order->viewOrder('6')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-03-05 10:33:49 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to tls://smtp.secureserver.net:465 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) in C:\xampp\htdocs\Qaswa\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): Un...', 'C:\\xampp\\htdocs...', 1868)
+#1 C:\xampp\htdocs\Qaswa\system\Email\Email.php(1868): fsockopen('tls://smtp.secu...', 465, NULL, NULL, 10)
+#2 C:\xampp\htdocs\Qaswa\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\Qaswa\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\Qaswa\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\Qaswa\app\Controllers\Home.php(92): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(932): App\Controllers\Home->userLogin()
+#7 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Qaswa\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-03-05 10:33:49 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-03-05 10:33:49 --> 
+ERROR - 2025-03-05 10:34:25 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to tls://smtp.secureserver.net:465 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) in C:\xampp\htdocs\Qaswa\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): Un...', 'C:\\xampp\\htdocs...', 1868)
+#1 C:\xampp\htdocs\Qaswa\system\Email\Email.php(1868): fsockopen('tls://smtp.secu...', 465, NULL, NULL, 10)
+#2 C:\xampp\htdocs\Qaswa\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\Qaswa\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\Qaswa\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\Qaswa\app\Controllers\Home.php(92): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(932): App\Controllers\Home->userLogin()
+#7 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Qaswa\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-03-05 10:34:25 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-03-05 10:34:25 --> 
+ERROR - 2025-03-05 10:34:48 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to tls://smtp.secureserver.net:465 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) in C:\xampp\htdocs\Qaswa\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): Un...', 'C:\\xampp\\htdocs...', 1868)
+#1 C:\xampp\htdocs\Qaswa\system\Email\Email.php(1868): fsockopen('tls://smtp.secu...', 465, NULL, NULL, 10)
+#2 C:\xampp\htdocs\Qaswa\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\Qaswa\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\Qaswa\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\Qaswa\app\Controllers\Home.php(92): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(932): App\Controllers\Home->userLogin()
+#7 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Qaswa\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-03-05 10:34:48 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-03-05 10:34:48 --> 
+ERROR - 2025-03-05 10:41:50 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to tls://smtp.secureserver.net:465 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) in C:\xampp\htdocs\Qaswa\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): Un...', 'C:\\xampp\\htdocs...', 1868)
+#1 C:\xampp\htdocs\Qaswa\system\Email\Email.php(1868): fsockopen('tls://smtp.secu...', 465, NULL, NULL, 10)
+#2 C:\xampp\htdocs\Qaswa\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\Qaswa\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\Qaswa\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\Qaswa\app\Controllers\Home.php(92): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(932): App\Controllers\Home->userLogin()
+#7 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Qaswa\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-03-05 10:41:50 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-03-05 10:41:50 --> 
+ERROR - 2025-03-05 10:45:50 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to tls://smtp.secureserver.net:465 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) in C:\xampp\htdocs\Qaswa\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): Un...', 'C:\\xampp\\htdocs...', 1868)
+#1 C:\xampp\htdocs\Qaswa\system\Email\Email.php(1868): fsockopen('tls://smtp.secu...', 465, NULL, NULL, 10)
+#2 C:\xampp\htdocs\Qaswa\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\Qaswa\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\Qaswa\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\Qaswa\app\Controllers\Home.php(92): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(932): App\Controllers\Home->userLogin()
+#7 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Qaswa\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2025-03-05 10:45:50 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-03-05 10:45:50 --> 
+CRITICAL - 2025-03-05 11:03:37 --> session_destroy(): Trying to destroy uninitialized session
+in SYSTEMPATH\Session\Session.php on line 449.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'C:\\xampp\\htdocs\\Qaswa\\system\\Session\\Session.php', 449)
+ 2 SYSTEMPATH\Session\Session.php(449): session_destroy()
+ 3 APPPATH\Views\web\login.php(1): CodeIgniter\Session\Session->destroy()
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\login.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/login', [], true)
+ 7 APPPATH\Controllers\Home.php(172): view('web/login')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->userLogout()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-05 11:03:47 --> session_destroy(): Trying to destroy uninitialized session
+in SYSTEMPATH\Session\Session.php on line 449.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'C:\\xampp\\htdocs\\Qaswa\\system\\Session\\Session.php', 449)
+ 2 SYSTEMPATH\Session\Session.php(449): session_destroy()
+ 3 APPPATH\Views\web\login.php(1): CodeIgniter\Session\Session->destroy()
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\login.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/login', [], true)
+ 7 APPPATH\Controllers\Home.php(172): view('web/login')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->userLogout()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-05 11:09:34 --> session_destroy(): Trying to destroy uninitialized session
+in SYSTEMPATH\Session\Session.php on line 449.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'C:\\xampp\\htdocs\\Qaswa\\system\\Session\\Session.php', 449)
+ 2 SYSTEMPATH\Session\Session.php(449): session_destroy()
+ 3 APPPATH\Views\web\login.php(1): CodeIgniter\Session\Session->destroy()
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\login.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/login', [], true)
+ 7 APPPATH\Controllers\Home.php(176): view('web/login')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->userLogout()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-05 11:11:23 --> session_destroy(): Trying to destroy uninitialized session
+in SYSTEMPATH\Session\Session.php on line 449.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'C:\\xampp\\htdocs\\Qaswa\\system\\Session\\Session.php', 449)
+ 2 SYSTEMPATH\Session\Session.php(449): session_destroy()
+ 3 APPPATH\Views\web\login.php(1): CodeIgniter\Session\Session->destroy()
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\login.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/login', [], true)
+ 7 APPPATH\Controllers\Home.php(172): view('web/login')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->userLogout()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-05 11:12:58 --> session_destroy(): Trying to destroy uninitialized session
+in SYSTEMPATH\Session\Session.php on line 449.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'C:\\xampp\\htdocs\\Qaswa\\system\\Session\\Session.php', 449)
+ 2 SYSTEMPATH\Session\Session.php(449): session_destroy()
+ 3 APPPATH\Views\web\login.php(1): CodeIgniter\Session\Session->destroy()
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\login.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/login', [], true)
+ 7 APPPATH\Controllers\Home.php(173): view('web/login')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->userLogout()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-05 11:27:50 --> session_destroy(): Trying to destroy uninitialized session
+in SYSTEMPATH\Session\Session.php on line 449.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'C:\\xampp\\htdocs\\Qaswa\\system\\Session\\Session.php', 449)
+ 2 SYSTEMPATH\Session\Session.php(449): session_destroy()
+ 3 APPPATH\Views\web\login.php(1): CodeIgniter\Session\Session->destroy()
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\login.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/login', [], true)
+ 7 APPPATH\Controllers\Home.php(178): view('web/login')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->userLogout()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-05 11:31:38 --> session_destroy(): Trying to destroy uninitialized session
+in SYSTEMPATH\Session\Session.php on line 449.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'C:\\xampp\\htdocs\\Qaswa\\system\\Session\\Session.php', 449)
+ 2 SYSTEMPATH\Session\Session.php(449): session_destroy()
+ 3 APPPATH\Views\web\login.php(1): CodeIgniter\Session\Session->destroy()
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\login.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/login', [], true)
+ 7 APPPATH\Controllers\Home.php(178): view('web/login')
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->userLogout()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-05 11:33:27 --> Undefined variable $session
+in APPPATH\Controllers\Home.php on line 175.
+ 1 APPPATH\Controllers\Home.php(175): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 175)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->userLogout()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

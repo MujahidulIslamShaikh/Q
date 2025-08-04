@@ -1,0 +1,244 @@
+CRITICAL - 2025-02-28 06:00:16 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 APPPATH\Filters\CustomCSRF.php(24): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(173): App\Filters\CustomCSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('/Login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-28 06:00:57 --> Undefined variable $validation
+in APPPATH\Controllers\Home.php on line 44.
+ 1 APPPATH\Controllers\Home.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->userLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-28 06:17:17 --> strpos(): Argument #1 ($haystack) must be of type string, CodeIgniter\Email\Email given
+in SYSTEMPATH\Email\Email.php on line 737.
+ 1 SYSTEMPATH\Email\Email.php(737): strpos(Object(CodeIgniter\Email\Email), ',')
+ 2 SYSTEMPATH\Email\Email.php(550): CodeIgniter\Email\Email->stringToArray(Object(CodeIgniter\Email\Email))
+ 3 APPPATH\Controllers\Home.php(64): CodeIgniter\Email\Email->setTo(Object(CodeIgniter\Email\Email))
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->userLogin()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-28 06:20:16 --> The route for "/verifyotp" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/verifyotp')
+ 2 SYSTEMPATH\Common.php(876): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Home.php(69): redirect('/verifyotp')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->userLogin()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-28 06:30:12 --> The route for "/verifyotp" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/verifyotp')
+ 2 SYSTEMPATH\Common.php(876): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Home.php(81): redirect('/verifyotp')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->userLogin()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-28 06:34:53 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 APPPATH\Filters\CustomCSRF.php(24): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(173): App\Filters\CustomCSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('/Login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-28 06:34:57 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 APPPATH\Filters\CustomCSRF.php(24): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(173): App\Filters\CustomCSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('/Login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-28 06:37:08 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 APPPATH\Filters\CustomCSRF.php(24): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(173): App\Filters\CustomCSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('/Login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-28 06:37:11 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 APPPATH\Filters\CustomCSRF.php(24): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(173): App\Filters\CustomCSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 5 SYSTEMPATH\CodeIgniter.php(471): CodeIgniter\Filters\Filters->run('/Login', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-28 09:33:40 --> Undefined variable $session
+in APPPATH\Controllers\Home.php on line 64.
+ 1 APPPATH\Controllers\Home.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->userLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-28 09:34:31 --> Invalid file: "web/verifyotp.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('web/verifyotp.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/verifyotp', [], true)
+ 3 APPPATH\Controllers\Home.php(125): view('web/verifyotp')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->verifyOTP()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-28 09:36:36 --> implode(): Argument #1 ($array) must be of type array, string given
+in APPPATH\Controllers\Home.php on line 99.
+ 1 APPPATH\Controllers\Home.php(99): implode('', null)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->verifyOTP()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-28 09:45:08 --> implode(): Argument #2 ($array) must be of type ?array, string given
+in APPPATH\Controllers\Home.php on line 98.
+ 1 APPPATH\Controllers\Home.php(98): implode('', '6099')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->verifyOTP()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-28 14:13:20 --> Undefined variable $cart
+in APPPATH\Views\web\services.php on line 79.
+ 1 APPPATH\Views\web\services.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cart', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\services.php', 79)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\web\\services.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/services', [], true)
+ 5 APPPATH\Controllers\Home.php(187): view('web/services', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->modelServices('Apple', 'Apple 15 Pro')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-28 14:13:43 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 173.
+ 1 APPPATH\Controllers\Home.php(173): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Home.php', 173)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->modelServices('Apple', 'Apple 15 Pro')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-02-28 14:17:18 --> mysqli_sql_exception: Table 'qaswa_telecom.service' doesn't exist in C:\xampp\htdocs\Qaswa\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Qaswa\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `cart`.*...', 0)
+#1 C:\xampp\htdocs\Qaswa\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*...')
+#2 C:\xampp\htdocs\Qaswa\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*...')
+#3 C:\xampp\htdocs\Qaswa\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*...', Array, false)
+#4 C:\xampp\htdocs\Qaswa\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Qaswa\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Qaswa\app\Controllers\Home.php(178): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(932): App\Controllers\Home->modelServices('Apple', 'Apple 15 Pro')
+#8 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Qaswa\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-02-28 14:17:18 --> Table 'qaswa_telecom.service' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `cart`.*, `service`.`title`, `service`.`main_price`, `service`.`discounted_price`, `service`.`image`
+FROM `cart`
+LEFT JOIN `service` ON `cart`.`service_id` = `service`.`id`
+WHERE `cart`.`user_id` = \'6\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*, `service`.`title`, `service`.`main_price`, `service`.`discounted_price`, `service`.`image`
+FROM `cart`
+LEFT JOIN `service` ON `cart`.`service_id` = `service`.`id`
+WHERE `cart`.`user_id` = \'6\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*, `service`.`title`, `service`.`main_price`, `service`.`discounted_price`, `service`.`image`
+FROM `cart`
+LEFT JOIN `service` ON `cart`.`service_id` = `service`.`id`
+WHERE `cart`.`user_id` = \'6\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `service`.`title`, `service`.`main_price`, `service`.`discounted_price`, `service`.`image`
+FROM `cart`
+LEFT JOIN `service` ON `cart`.`service_id` = `service`.`id`
+WHERE `cart`.`user_id` = :cart.user_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(178): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->modelServices('Apple', 'Apple 15 Pro')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-02-28 14:17:58 --> mysqli_sql_exception: Table 'qaswa_telecom.service' doesn't exist in C:\xampp\htdocs\Qaswa\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Qaswa\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `cart`.*...', 0)
+#1 C:\xampp\htdocs\Qaswa\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*...')
+#2 C:\xampp\htdocs\Qaswa\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*...')
+#3 C:\xampp\htdocs\Qaswa\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*...', Array, false)
+#4 C:\xampp\htdocs\Qaswa\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Qaswa\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Qaswa\app\Controllers\Home.php(178): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(932): App\Controllers\Home->modelServices('Apple', 'Apple 15 Pro')
+#8 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Qaswa\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-02-28 14:17:58 --> Table 'qaswa_telecom.service' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `cart`.*, `service`.`title`, `service`.`main_price`, `service`.`discounted_price`, `service`.`image`
+FROM `cart`
+LEFT JOIN `service` ON `cart`.`service_id` = `service`.`id`
+WHERE `cart`.`user_id` = \'6\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*, `service`.`title`, `service`.`main_price`, `service`.`discounted_price`, `service`.`image`
+FROM `cart`
+LEFT JOIN `service` ON `cart`.`service_id` = `service`.`id`
+WHERE `cart`.`user_id` = \'6\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*, `service`.`title`, `service`.`main_price`, `service`.`discounted_price`, `service`.`image`
+FROM `cart`
+LEFT JOIN `service` ON `cart`.`service_id` = `service`.`id`
+WHERE `cart`.`user_id` = \'6\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `service`.`title`, `service`.`main_price`, `service`.`discounted_price`, `service`.`image`
+FROM `cart`
+LEFT JOIN `service` ON `cart`.`service_id` = `service`.`id`
+WHERE `cart`.`user_id` = :cart.user_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(178): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->modelServices('Apple', 'Apple 15 Pro')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-02-28 14:19:03 --> mysqli_sql_exception: Table 'qaswa_telecom.service' doesn't exist in C:\xampp\htdocs\Qaswa\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\Qaswa\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `cart`.*...', 0)
+#1 C:\xampp\htdocs\Qaswa\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*...')
+#2 C:\xampp\htdocs\Qaswa\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*...')
+#3 C:\xampp\htdocs\Qaswa\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*...', Array, false)
+#4 C:\xampp\htdocs\Qaswa\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Qaswa\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Qaswa\app\Controllers\Home.php(178): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(932): App\Controllers\Home->modelServices('Apple', 'Apple 15 Pro')
+#8 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\Qaswa\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Qaswa\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2025-02-28 14:19:03 --> Table 'qaswa_telecom.service' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `cart`.*, `service`.`title`, `service`.`main_price`, `service`.`discounted_price`, `service`.`image`
+FROM `cart`
+LEFT JOIN `service` ON `cart`.`service_id` = `service`.`id`
+WHERE `cart`.`user_id` = \'6\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `cart`.*, `service`.`title`, `service`.`main_price`, `service`.`discounted_price`, `service`.`image`
+FROM `cart`
+LEFT JOIN `service` ON `cart`.`service_id` = `service`.`id`
+WHERE `cart`.`user_id` = \'6\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `cart`.*, `service`.`title`, `service`.`main_price`, `service`.`discounted_price`, `service`.`image`
+FROM `cart`
+LEFT JOIN `service` ON `cart`.`service_id` = `service`.`id`
+WHERE `cart`.`user_id` = \'6\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `cart`.*, `service`.`title`, `service`.`main_price`, `service`.`discounted_price`, `service`.`image`
+FROM `cart`
+LEFT JOIN `service` ON `cart`.`service_id` = `service`.`id`
+WHERE `cart`.`user_id` = :cart.user_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(178): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->modelServices('Apple', 'Apple 15 Pro')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

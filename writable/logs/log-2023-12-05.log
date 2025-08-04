@@ -1,0 +1,6 @@
+CRITICAL - 2023-12-05 09:16:47 --> Class "App\Controllers\BgvStatusModel" not found
+in APPPATH\Controllers\Controllerusers.php on line 380.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Controllerusers->downloadExcel()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controllerusers))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

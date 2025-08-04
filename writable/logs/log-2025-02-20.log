@@ -1,0 +1,110 @@
+CRITICAL - 2025-02-20 05:18:21 --> Cannot call constructor
+in APPPATH\Controllers\Brand.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Brand->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-20 06:31:22 --> Attempt to read property "title" on array
+in APPPATH\Views\admin\brand-view.php on line 66.
+ 1 APPPATH\Views\admin\brand-view.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "title" on array', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\brand-view.php', 66)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\brand-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/brand-view', [], true)
+ 5 APPPATH\Controllers\Brand.php(31): view('admin/brand-view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Brand->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Brand))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-20 07:25:07 --> Undefined variable $data
+in APPPATH\Controllers\Brand.php on line 83.
+ 1 APPPATH\Controllers\Brand.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Brand.php', 83)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Brand->updateBrand('4')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Brand))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-20 10:39:05 --> Undefined variable $banners
+in APPPATH\Views\admin\model-view.php on line 81.
+ 1 APPPATH\Views\admin\model-view.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $banners', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\model-view.php', 81)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\model-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/model-view', [], true)
+ 5 APPPATH\Controllers\Model.php(29): view('admin/model-view')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Model->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Model))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-20 10:39:43 --> Undefined variable $a
+in APPPATH\Views\admin\model-view.php on line 82.
+ 1 APPPATH\Views\admin\model-view.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $a', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\model-view.php', 82)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\model-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/model-view', [], true)
+ 5 APPPATH\Controllers\Model.php(29): view('admin/model-view')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Model->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Model))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-20 10:41:19 --> syntax error, unexpected token ";"
+in APPPATH\Views\admin\model-view.php on line 89.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/model-view', [], true)
+ 3 APPPATH\Controllers\Model.php(29): view('admin/model-view')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Model->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Model))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-20 10:42:28 --> Undefined variable $banner
+in APPPATH\Views\admin\model-view.php on line 88.
+ 1 APPPATH\Views\admin\model-view.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $banner', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\model-view.php', 88)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\model-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/model-view', [], true)
+ 5 APPPATH\Controllers\Model.php(29): view('admin/model-view')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Model->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Model))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-20 11:02:23 --> Attempt to read property "id" on array
+in APPPATH\Views\admin\add-model-view.php on line 54.
+ 1 APPPATH\Views\admin\add-model-view.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\add-model-view.php', 54)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\add-model-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/add-model-view', [], true)
+ 5 APPPATH\Controllers\Model.php(40): view('admin/add-model-view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Model->addModel()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Model))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-20 12:16:29 --> Undefined variable $brands
+in APPPATH\Views\admin\edit-model-view.php on line 53.
+ 1 APPPATH\Views\admin\edit-model-view.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $brands', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\edit-model-view.php', 53)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\edit-model-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/edit-model-view', [], true)
+ 5 APPPATH\Controllers\Model.php(74): view('admin/edit-model-view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Model->editModel('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Model))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-20 12:59:01 --> Undefined variable $model
+in APPPATH\Views\admin\service-view.php on line 84.
+ 1 APPPATH\Views\admin\service-view.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $model', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\service-view.php', 84)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\service-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/service-view', [], true)
+ 5 APPPATH\Controllers\Service.php(30): view('admin/service-view')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Service->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-20 13:05:31 --> Undefined variable $brands
+in APPPATH\Views\admin\add-service-view.php on line 53.
+ 1 APPPATH\Views\admin\add-service-view.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $brands', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\add-service-view.php', 53)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\add-service-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/add-service-view', [], true)
+ 5 APPPATH\Controllers\Service.php(45): view('admin/add-service-view')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Service->addService()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

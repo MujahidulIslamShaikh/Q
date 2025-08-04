@@ -1,0 +1,68 @@
+CRITICAL - 2025-02-13 09:57:59 --> Call to undefined function set_value()
+in APPPATH\Views\admin\add-banner-view.php on line 39.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/add-banner-view', [], true)
+ 4 APPPATH\Controllers\Banner.php(43): view('admin/add-banner-view')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Banner->addBanner()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Banner))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-13 10:02:11 --> Call to undefined function validation_show_error()
+in APPPATH\Views\admin\add-banner-view.php on line 40.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/add-banner-view', [], true)
+ 4 APPPATH\Controllers\Banner.php(43): view('admin/add-banner-view')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Banner->addBanner()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Banner))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-13 10:05:48 --> strpos(): Argument #1 ($haystack) must be of type string, array given
+in SYSTEMPATH\Common.php on line 611.
+ 1 SYSTEMPATH\Common.php(611): strpos([...], '_helper')
+ 2 SYSTEMPATH\Controller.php(85): helper([...])
+ 3 APPPATH\Controllers\BaseController.php(52): CodeIgniter\Controller->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 4 SYSTEMPATH\CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 5 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-13 10:11:52 --> strpos(): Argument #1 ($haystack) must be of type string, array given
+in SYSTEMPATH\Common.php on line 611.
+ 1 SYSTEMPATH\Common.php(611): strpos([...], '_helper')
+ 2 SYSTEMPATH\Controller.php(85): helper([...])
+ 3 APPPATH\Controllers\BaseController.php(52): CodeIgniter\Controller->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 4 SYSTEMPATH\CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 5 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-13 10:11:54 --> strpos(): Argument #1 ($haystack) must be of type string, array given
+in SYSTEMPATH\Common.php on line 611.
+ 1 SYSTEMPATH\Common.php(611): strpos([...], '_helper')
+ 2 SYSTEMPATH\Controller.php(85): helper([...])
+ 3 APPPATH\Controllers\BaseController.php(52): CodeIgniter\Controller->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 4 SYSTEMPATH\CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 5 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-13 10:11:55 --> strpos(): Argument #1 ($haystack) must be of type string, array given
+in SYSTEMPATH\Common.php on line 611.
+ 1 SYSTEMPATH\Common.php(611): strpos([...], '_helper')
+ 2 SYSTEMPATH\Controller.php(85): helper([...])
+ 3 APPPATH\Controllers\BaseController.php(52): CodeIgniter\Controller->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 4 SYSTEMPATH\CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 5 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-13 10:19:19 --> "<small class="text-danger">" is not a valid Validation template.
+in SYSTEMPATH\Helpers\form_helper.php on line 754.
+ 1 SYSTEMPATH\Helpers\form_helper.php(754): CodeIgniter\Validation\Exceptions\ValidationException::forInvalidTemplate('<small class="text-danger">')
+ 2 APPPATH\Views\admin\add-banner-view.php(33): validation_show_error('title', '<small class="text-danger">', '</small>')
+ 3 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\cpl\\app\\Views\\admin\\add-banner-view.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/add-banner-view', [], true)
+ 6 APPPATH\Controllers\Banner.php(43): view('admin/add-banner-view')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Banner->addBanner()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Banner))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

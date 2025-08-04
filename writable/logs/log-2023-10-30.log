@@ -1,0 +1,106 @@
+CRITICAL - 2023-10-30 10:26:35 --> Trying to access array offset on value of type null
+in APPPATH/Views/documents.php on line 182.
+ 1 APPPATH/Views/documents.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home3/reliableverify/public_html/crm/app/Views/documents.php', 182)
+ 2 SYSTEMPATH/View/View.php(224): include('/home3/reliableverify/public_html/crm/app/Views/documents.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('documents', [], true)
+ 5 APPPATH/Controllers/Controllerusers.php(89): view('documents', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Controllerusers->userdoc()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controllerusers))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 10:26:45 --> Trying to access array offset on value of type null
+in APPPATH/Views/documents.php on line 182.
+ 1 APPPATH/Views/documents.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home3/reliableverify/public_html/crm/app/Views/documents.php', 182)
+ 2 SYSTEMPATH/View/View.php(224): include('/home3/reliableverify/public_html/crm/app/Views/documents.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('documents', [], true)
+ 5 APPPATH/Controllers/Controllerusers.php(89): view('documents', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Controllerusers->userdoc()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controllerusers))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 10:27:01 --> Trying to access array offset on value of type null
+in APPPATH/Views/bgv.php on line 79.
+ 1 APPPATH/Views/bgv.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home3/reliableverify/public_html/crm/app/Views/bgv.php', 79)
+ 2 SYSTEMPATH/View/View.php(224): include('/home3/reliableverify/public_html/crm/app/Views/bgv.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('bgv', [], true)
+ 5 APPPATH/Controllers/BgvController.php(56): view('bgv', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\BgvController->backgroundVerify()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BgvController))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 10:27:25 --> Trying to access array offset on value of type null
+in APPPATH/Views/documents.php on line 182.
+ 1 APPPATH/Views/documents.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home3/reliableverify/public_html/crm/app/Views/documents.php', 182)
+ 2 SYSTEMPATH/View/View.php(224): include('/home3/reliableverify/public_html/crm/app/Views/documents.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('documents', [], true)
+ 5 APPPATH/Controllers/Controllerusers.php(89): view('documents', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Controllerusers->userdoc()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controllerusers))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 10:27:48 --> Trying to access array offset on value of type null
+in APPPATH/Views/bgv.php on line 79.
+ 1 APPPATH/Views/bgv.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home3/reliableverify/public_html/crm/app/Views/bgv.php', 79)
+ 2 SYSTEMPATH/View/View.php(224): include('/home3/reliableverify/public_html/crm/app/Views/bgv.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('bgv', [], true)
+ 5 APPPATH/Controllers/BgvController.php(56): view('bgv', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\BgvController->backgroundVerify()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BgvController))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 10:27:52 --> Trying to access array offset on value of type null
+in APPPATH/Views/documents.php on line 182.
+ 1 APPPATH/Views/documents.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home3/reliableverify/public_html/crm/app/Views/documents.php', 182)
+ 2 SYSTEMPATH/View/View.php(224): include('/home3/reliableverify/public_html/crm/app/Views/documents.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('documents', [], true)
+ 5 APPPATH/Controllers/Controllerusers.php(89): view('documents', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Controllerusers->userdoc()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controllerusers))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 10:28:10 --> Trying to access array offset on value of type null
+in APPPATH/Views/bgv.php on line 79.
+ 1 APPPATH/Views/bgv.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home3/reliableverify/public_html/crm/app/Views/bgv.php', 79)
+ 2 SYSTEMPATH/View/View.php(224): include('/home3/reliableverify/public_html/crm/app/Views/bgv.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('bgv', [], true)
+ 5 APPPATH/Controllers/BgvController.php(56): view('bgv', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\BgvController->backgroundVerify()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BgvController))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 10:28:21 --> Trying to access array offset on value of type null
+in APPPATH/Views/bgv.php on line 79.
+ 1 APPPATH/Views/bgv.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home3/reliableverify/public_html/crm/app/Views/bgv.php', 79)
+ 2 SYSTEMPATH/View/View.php(224): include('/home3/reliableverify/public_html/crm/app/Views/bgv.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('bgv', [], true)
+ 5 APPPATH/Controllers/BgvController.php(56): view('bgv', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\BgvController->backgroundVerify()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BgvController))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 10:29:41 --> Trying to access array offset on value of type null
+in APPPATH/Views/bgv.php on line 79.
+ 1 APPPATH/Views/bgv.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home3/reliableverify/public_html/crm/app/Views/bgv.php', 79)
+ 2 SYSTEMPATH/View/View.php(224): include('/home3/reliableverify/public_html/crm/app/Views/bgv.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('bgv', [], true)
+ 5 APPPATH/Controllers/BgvController.php(56): view('bgv', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\BgvController->backgroundVerify()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BgvController))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 10:49:22 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/BgvController.php on line 470.
+ 1 APPPATH/Controllers/BgvController.php(470): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home3/reliableverify/public_html/crm/app/Controllers/BgvController.php', 470)
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\BgvController->stopCase()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BgvController))
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

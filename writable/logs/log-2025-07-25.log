@@ -1,0 +1,19 @@
+CRITICAL - 2025-07-25 11:28:33 --> syntax error, unexpected token "echo", expecting "," or ";"
+in APPPATH\Views\web\home.php on line 3.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/home', [], true)
+ 3 APPPATH\Controllers\Home.php(69): view('web/home', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-07-25 11:30:34 --> Call to undefined function word_limiter()
+in APPPATH\Views\web\about-us.php on line 10.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('web/about-us', [], true)
+ 4 APPPATH\Controllers\Home.php(201): view('web/about-us', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->AboutUs()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

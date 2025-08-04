@@ -1,0 +1,128 @@
+CRITICAL - 2025-02-22 05:42:18 --> Undefined variable $service
+in APPPATH\Views\admin\view-order-view.php on line 51.
+ 1 APPPATH\Views\admin\view-order-view.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $service', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\view-order-view.php', 51)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\view-order-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/view-order-view', [], true)
+ 5 APPPATH\Controllers\Order.php(27): view('admin/view-order-view')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Order->viewOrder('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-22 06:15:12 --> Undefined variable $service
+in APPPATH\Views\admin\gallery-view.php on line 86.
+ 1 APPPATH\Views\admin\gallery-view.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $service', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\gallery-view.php', 86)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\gallery-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/gallery-view', [], true)
+ 5 APPPATH\Controllers\Gallery.php(21): view('admin/gallery-view')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Gallery->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gallery))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-22 06:15:36 --> Undefined variable $service
+in APPPATH\Views\admin\gallery-view.php on line 86.
+ 1 APPPATH\Views\admin\gallery-view.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $service', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\gallery-view.php', 86)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\gallery-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/gallery-view', [], true)
+ 5 APPPATH\Controllers\Gallery.php(21): view('admin/gallery-view')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Gallery->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gallery))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-22 06:15:38 --> Undefined variable $service
+in APPPATH\Views\admin\gallery-view.php on line 86.
+ 1 APPPATH\Views\admin\gallery-view.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $service', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\gallery-view.php', 86)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\gallery-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/gallery-view', [], true)
+ 5 APPPATH\Controllers\Gallery.php(21): view('admin/gallery-view')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Gallery->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gallery))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-22 06:19:56 --> Class "App\Models\GalleryModel" not found
+in APPPATH\Controllers\Gallery.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Gallery->addGallery()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Gallery))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-22 07:38:18 --> Undefined variable $blog
+in APPPATH\Views\admin\edit-blog-view.php on line 53.
+ 1 APPPATH\Views\admin\edit-blog-view.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $blog', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\edit-blog-view.php', 53)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\edit-blog-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/edit-blog-view', [], true)
+ 5 APPPATH\Controllers\Blog.php(60): view('admin/edit-blog-view')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Blog->editBlog('3')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-22 07:45:00 --> Undefined variable $ServiceModel
+in APPPATH\Controllers\Blog.php on line 104.
+ 1 APPPATH\Controllers\Blog.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ServiceModel', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Blog.php', 104)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Blog->deleteBlog('3')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-22 10:35:08 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\edit-blog-view.php on line 45.
+ 1 APPPATH\Views\admin\edit-blog-view.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\edit-blog-view.php', 45)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\edit-blog-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/edit-blog-view', [], true)
+ 5 APPPATH\Controllers\Blog.php(60): view('admin/edit-blog-view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Blog->editBlog('3')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-22 10:35:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\edit-blog-view.php on line 45.
+ 1 APPPATH\Views\admin\edit-blog-view.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\edit-blog-view.php', 45)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\edit-blog-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/edit-blog-view', [], true)
+ 5 APPPATH\Controllers\Blog.php(60): view('admin/edit-blog-view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Blog->editBlog('3')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-22 10:37:33 --> Undefined array key "description"
+in APPPATH\Views\admin\edit-issue-view.php on line 67.
+ 1 APPPATH\Views\admin\edit-issue-view.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "description"', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\edit-issue-view.php', 67)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\edit-issue-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/edit-issue-view', [], true)
+ 5 APPPATH\Controllers\Issue.php(59): view('admin/edit-issue-view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Issue->editIssue('3')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Issue))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-22 12:35:01 --> Invalid file: "admin/edit-mobile-view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit-mobile-view.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/edit-mobile-view', [], true)
+ 3 APPPATH\Controllers\Contact.php(55): view('admin/edit-mobile-view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Contact->editMobile('3')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contact))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-22 12:47:28 --> Undefined variable $email
+in APPPATH\Views\admin\email-view.php on line 81.
+ 1 APPPATH\Views\admin\email-view.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $email', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\email-view.php', 81)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\email-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/email-view', [], true)
+ 5 APPPATH\Controllers\Contact.php(96): view('admin/email-view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Contact->Email()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contact))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-22 13:03:59 --> Undefined variable $EmailModel
+in APPPATH\Controllers\Contact.php on line 210.
+ 1 APPPATH\Controllers\Contact.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $EmailModel', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Contact.php', 210)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Contact->updateAddress('1')
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contact))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,39 @@
+CRITICAL - 2025-02-24 06:20:22 --> Class "App\Models\TermsConditionModel" not found
+in APPPATH\Controllers\Contact.php on line 234.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Contact->TermsCondition()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contact))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-24 06:41:47 --> Undefined array key "address"
+in APPPATH\Views\admin\terms-condition-view.php on line 84.
+ 1 APPPATH\Views\admin\terms-condition-view.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "address"', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\terms-condition-view.php', 84)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\terms-condition-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/terms-condition-view', [], true)
+ 5 APPPATH\Controllers\Contact.php(237): view('admin/terms-condition-view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Contact->TermsCondition()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contact))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-24 06:58:47 --> Undefined variable $terms
+in APPPATH\Views\admin\warranty-policy-view.php on line 81.
+ 1 APPPATH\Views\admin\warranty-policy-view.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $terms', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\warranty-policy-view.php', 81)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\warranty-policy-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/warranty-policy-view', [], true)
+ 5 APPPATH\Controllers\Contact.php(308): view('admin/warranty-policy-view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Contact->WarrantyPolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contact))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-24 06:58:57 --> Undefined variable $terms
+in APPPATH\Views\admin\warranty-policy-view.php on line 81.
+ 1 APPPATH\Views\admin\warranty-policy-view.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $terms', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\warranty-policy-view.php', 81)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\warranty-policy-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/warranty-policy-view', [], true)
+ 5 APPPATH\Controllers\Contact.php(308): view('admin/warranty-policy-view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Contact->WarrantyPolicy()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Contact))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

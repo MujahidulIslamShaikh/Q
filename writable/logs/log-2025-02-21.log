@@ -1,0 +1,60 @@
+CRITICAL - 2025-02-21 09:58:43 --> Undefined variable $services
+in APPPATH\Views\admin\service-view.php on line 85.
+ 1 APPPATH\Views\admin\service-view.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\service-view.php', 85)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\service-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/service-view', [], true)
+ 5 APPPATH\Controllers\Service.php(32): view('admin/service-view')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Service->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-21 10:17:57 --> Undefined variable $services
+in APPPATH\Views\admin\service-view.php on line 85.
+ 1 APPPATH\Views\admin\service-view.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $services', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\service-view.php', 85)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\service-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/service-view', [], true)
+ 5 APPPATH\Controllers\Service.php(81): view('admin/service-view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Service->editService('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-21 10:18:52 --> Invalid file: "admin/edit-service-view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit-service-view.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/edit-service-view', [], true)
+ 3 APPPATH\Controllers\Service.php(81): view('admin/edit-service-view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Service->editService('2')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Service))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-21 13:06:45 --> Undefined variable $data
+in APPPATH\Controllers\Order.php on line 22.
+ 1 APPPATH\Controllers\Order.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\Qaswa\\app\\Controllers\\Order.php', 22)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Order->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-21 13:06:56 --> Undefined variable $a
+in APPPATH\Views\admin\order-view.php on line 86.
+ 1 APPPATH\Views\admin\order-view.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $a', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\order-view.php', 86)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\order-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/order-view', [], true)
+ 5 APPPATH\Controllers\Order.php(22): view('admin/order-view')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-02-21 13:09:12 --> Undefined variable $service
+in APPPATH\Views\admin\order-view.php on line 94.
+ 1 APPPATH\Views\admin\order-view.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $service', 'C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\order-view.php', 94)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Qaswa\\app\\Views\\admin\\order-view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/order-view', [], true)
+ 5 APPPATH\Controllers\Order.php(22): view('admin/order-view')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,161 @@
+CRITICAL - 2023-10-26 06:24:10 --> Class "App\Models\clientModel" not found
+in APPPATH/Controllers/Controllerclients.php on line 174.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Controllerclients->addclient()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controllerclients))
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 06:24:26 --> Class "App\Models\clientModel" not found
+in APPPATH/Controllers/Controllerclients.php on line 174.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Controllerclients->addclient()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controllerclients))
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 06:24:50 --> Class "App\Models\clientModel" not found
+in APPPATH/Controllers/Controllerclients.php on line 174.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Controllerclients->addclient()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controllerclients))
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 06:26:36 --> Class "App\Models\clientModel" not found
+in APPPATH/Controllers/Controllerclients.php on line 174.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Controllerclients->addclient()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controllerclients))
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 06:28:36 --> Class "App\Models\clientModel" not found
+in APPPATH/Controllers/Controllerclients.php on line 174.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Controllerclients->addclient()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controllerclients))
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 06:31:26 --> Cannot use App\Models\clientModel as clientModel because the name is already in use
+in APPPATH/Controllers/Controllerclients.php on line 16.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-26 07:36:49 --> insertBatch() has no data.
+in SYSTEMPATH/Database/BaseBuilder.php on line 1772.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 2 SYSTEMPATH/Model.php(364): CodeIgniter\Database\BaseBuilder->insertBatch([], null, 100)
+ 3 SYSTEMPATH/BaseModel.php(874): CodeIgniter\Model->doInsertBatch([], null, 100, false)
+ 4 APPPATH/Controllers/Controllercandinfo.php(282): CodeIgniter\BaseModel->insertBatch([])
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Controllercandinfo->addcandinfo()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controllercandinfo))
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 07:54:26 --> insertBatch() has no data.
+in SYSTEMPATH/Database/BaseBuilder.php on line 1772.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 2 SYSTEMPATH/Model.php(364): CodeIgniter\Database\BaseBuilder->insertBatch([], null, 100)
+ 3 SYSTEMPATH/BaseModel.php(874): CodeIgniter\Model->doInsertBatch([], null, 100, false)
+ 4 APPPATH/Controllers/Controllercandinfo.php(282): CodeIgniter\BaseModel->insertBatch([])
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Controllercandinfo->addcandinfo()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controllercandinfo))
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 07:54:33 --> Undefined variable $CandidateModel
+in APPPATH/Controllers/BgvController.php on line 312.
+ 1 APPPATH/Controllers/BgvController.php(312): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $CandidateModel', '/home3/reliableverify/public_html/crm/app/Controllers/BgvController.php', 312)
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\BgvController->bgvAmount()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BgvController))
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 07:56:37 --> Undefined variable $candidate
+in APPPATH/Controllers/BgvController.php on line 389.
+ 1 APPPATH/Controllers/BgvController.php(389): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $candidate', '/home3/reliableverify/public_html/crm/app/Controllers/BgvController.php', 389)
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\BgvController->amountApproval()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BgvController))
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 08:27:02 --> Undefined variable $color
+in APPPATH/Controllers/BgvController.php on line 210.
+ 1 APPPATH/Controllers/BgvController.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $color', '/home3/reliableverify/public_html/crm/app/Controllers/BgvController.php', 210)
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\BgvController->addIndividualStatus()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BgvController))
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 10:07:23 --> insertBatch() has no data.
+in SYSTEMPATH/Database/BaseBuilder.php on line 1772.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 2 SYSTEMPATH/Model.php(364): CodeIgniter\Database\BaseBuilder->insertBatch([], null, 100)
+ 3 SYSTEMPATH/BaseModel.php(874): CodeIgniter\Model->doInsertBatch([], null, 100, false)
+ 4 APPPATH/Controllers/Controllercandinfo.php(282): CodeIgniter\BaseModel->insertBatch([])
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Controllercandinfo->addcandinfo()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controllercandinfo))
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 10:41:48 --> Undefined array key "dob003"
+in APPPATH/Views/candidate-info-form.php on line 102.
+ 1 APPPATH/Views/candidate-info-form.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dob003"', '/home3/reliableverify/public_html/crm/app/Views/candidate-info-form.php', 102)
+ 2 SYSTEMPATH/View/View.php(224): include('/home3/reliableverify/public_html/crm/app/Views/candidate-info-form.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('candidate-info-form', [], true)
+ 5 APPPATH/Controllers/Controllerusers.php(339): view('candidate-info-form', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Controllerusers->candidateDetails()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controllerusers))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 11:01:56 --> Undefined array key "created_at"
+in APPPATH/Views/candidate-declaration.php on line 198.
+ 1 APPPATH/Views/candidate-declaration.php(198): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', '/home3/reliableverify/public_html/crm/app/Views/candidate-declaration.php', 198)
+ 2 SYSTEMPATH/View/View.php(224): include('/home3/reliableverify/public_html/crm/app/Views/candidate-declaration.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('candidate-declaration', [], true)
+ 5 APPPATH/Controllers/Controllercandinfo.php(108): view('candidate-declaration', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Controllercandinfo->Declaration()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controllercandinfo))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 11:01:59 --> Undefined array key "created_at"
+in APPPATH/Views/candidate-declaration.php on line 198.
+ 1 APPPATH/Views/candidate-declaration.php(198): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', '/home3/reliableverify/public_html/crm/app/Views/candidate-declaration.php', 198)
+ 2 SYSTEMPATH/View/View.php(224): include('/home3/reliableverify/public_html/crm/app/Views/candidate-declaration.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('candidate-declaration', [], true)
+ 5 APPPATH/Controllers/Controllercandinfo.php(108): view('candidate-declaration', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Controllercandinfo->Declaration()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controllercandinfo))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 11:02:03 --> Undefined array key "created_at"
+in APPPATH/Views/candidate-declaration.php on line 198.
+ 1 APPPATH/Views/candidate-declaration.php(198): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', '/home3/reliableverify/public_html/crm/app/Views/candidate-declaration.php', 198)
+ 2 SYSTEMPATH/View/View.php(224): include('/home3/reliableverify/public_html/crm/app/Views/candidate-declaration.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('candidate-declaration', [], true)
+ 5 APPPATH/Controllers/Controllercandinfo.php(108): view('candidate-declaration', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Controllercandinfo->Declaration()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controllercandinfo))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 11:02:19 --> Undefined array key "created_at"
+in APPPATH/Views/candidate-declaration.php on line 198.
+ 1 APPPATH/Views/candidate-declaration.php(198): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', '/home3/reliableverify/public_html/crm/app/Views/candidate-declaration.php', 198)
+ 2 SYSTEMPATH/View/View.php(224): include('/home3/reliableverify/public_html/crm/app/Views/candidate-declaration.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('candidate-declaration', [], true)
+ 5 APPPATH/Controllers/Controllercandinfo.php(108): view('candidate-declaration', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Controllercandinfo->Declaration()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controllercandinfo))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 11:03:48 --> Undefined array key "created_at"
+in APPPATH/Views/candidate-declaration.php on line 198.
+ 1 APPPATH/Views/candidate-declaration.php(198): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', '/home3/reliableverify/public_html/crm/app/Views/candidate-declaration.php', 198)
+ 2 SYSTEMPATH/View/View.php(224): include('/home3/reliableverify/public_html/crm/app/Views/candidate-declaration.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('candidate-declaration', [], true)
+ 5 APPPATH/Controllers/Controllercandinfo.php(108): view('candidate-declaration', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Controllercandinfo->Declaration()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controllercandinfo))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-26 11:04:00 --> Undefined array key "created_at"
+in APPPATH/Views/candidate-declaration.php on line 198.
+ 1 APPPATH/Views/candidate-declaration.php(198): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "created_at"', '/home3/reliableverify/public_html/crm/app/Views/candidate-declaration.php', 198)
+ 2 SYSTEMPATH/View/View.php(224): include('/home3/reliableverify/public_html/crm/app/Views/candidate-declaration.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('candidate-declaration', [], true)
+ 5 APPPATH/Controllers/Controllercandinfo.php(108): view('candidate-declaration', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Controllercandinfo->Declaration()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controllercandinfo))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

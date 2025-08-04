@@ -1,0 +1,22 @@
+CRITICAL - 2023-11-30 04:59:21 --> Undefined variable $NewVisionEmp_O
+in APPPATH\Views\emp-dashboard-client-emp.php on line 247.
+ 1 APPPATH\Views\emp-dashboard-client-emp.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $NewVisionEmp_O', 'C:\\xampp\\htdocs\\ReliableBack1\\app\\Views\\emp-dashboard-client-emp.php', 247)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ReliableBack1\\app\\Views\\emp-dashboard-client-emp.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('emp-dashboard-client-emp', [], true)
+ 5 APPPATH\Controllers\Controllerusers.php(142): view('emp-dashboard-client-emp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Controllerusers->empdashClient()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controllerusers))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-30 05:00:16 --> Undefined variable $BgvStatusModel
+in APPPATH\Views\emp-dashboard-client-emp.php on line 265.
+ 1 APPPATH\Views\emp-dashboard-client-emp.php(265): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $BgvStatusModel', 'C:\\xampp\\htdocs\\ReliableBack1\\app\\Views\\emp-dashboard-client-emp.php', 265)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\ReliableBack1\\app\\Views\\emp-dashboard-client-emp.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('emp-dashboard-client-emp', [], true)
+ 5 APPPATH\Controllers\Controllerusers.php(142): view('emp-dashboard-client-emp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Controllerusers->empdashClient()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Controllerusers))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
