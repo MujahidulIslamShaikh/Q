@@ -50,14 +50,14 @@ $routes->post('/Checkout', 'Home::Checkout');
 $routes->post('/order-confirm', 'Home::orderConfirm');
 $routes->get('/myOrders', 'Home::myOrders');
 $routes->get('/orderDetails/(:segment)', 'Home::orderDetails/$1');
-$routes->post('cancel-order/(:segment)', 'Home::cancelOrder/$1');
+$routes->post('cancel-order/(:segment)', 'Home::cancelOrder/$1');     
 $routes->post('reschedule-order', 'Home::rescheduleOrder');
 $routes->get('getWarrantyDetails/(:num)', 'Home::getWarrantyDetails/$1');
 // $routes->get('' 'Home::');
 
 // Admin Routes
-$routes->get('/admin/godown/add_product', 'ControllerGodown::add_product');
-$routes->post('/admin/godown/add_product', 'ControllerGodown::add_product');
+$routes->get('/admin/godown/add_product', 'Godown::index');
+// $routes->post('/admin/godown/add_product', 'Godown::add_product');
 
 $routes->get('/admin', 'Controllerlogin::index');
 $routes->post('/admin', 'Controllerlogin::login');

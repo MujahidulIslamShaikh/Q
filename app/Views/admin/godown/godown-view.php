@@ -61,19 +61,32 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php $a = 1;
-                                    foreach ($banners as $banner): ?>
+                                    <?php 
+                                    // $a = 1;
+                                    // foreach ($banners as $banner): ?>
                                         <tr>
-                                            <td><?= $a++; ?> </td>
-                                            <td><img src="<?= base_url('public/uploads/' . $banner['image']) ?>" alt="Icon" style="width: 250px; height: 50px;"></td>
-                                            <td><?= date('d-m-Y', strtotime($banner['created_at'])) ?></td>
+                                            <td><?php
+                                            //  $a++;
+                                              ?> </td>
+                                            <td><img src="<?php
+                                            //  base_url('public/uploads/' . $banner['image'])
+                                              ?>" alt="Icon" style="width: 250px; height: 50px;"></td>
+                                            <td><?php 
+                                            // date('d-m-Y', strtotime($banner['created_at']))
+                                             ?></td>
                                             <td class="text-right">
-                                                <!-- <a href="<?= base_url('admin/edit-banner/' . $banner['id']) ?>" class="btn btn-sm btn-white text-success me-2"><i class="far fa-edit me-1"></i> Edit</a> -->
-                                                <a href="javascript:void(0);" onclick="confirmDelete(<?= $banner['id'] ?>)" class="btn btn-sm btn-white text-danger me-2">
+                                                <!-- <a href="<?php 
+                                                // base_url('admin/edit-banner/' . $banner['id'])
+                                                 ?>" class="btn btn-sm btn-white text-success me-2"><i class="far fa-edit me-1"></i> Edit</a> -->
+                                                <a href="javascript:void(0);" onclick="confirmDelete(<?php 
+                                                // $banner['id'] 
+                                                ?>)" class="btn btn-sm btn-white text-danger me-2">
                                                     <i class="far fa-trash-alt me-1"></i>Delete</a>
                                             </td>
                                         </tr>
-                                    <?php endforeach; ?>
+                                    <?php 
+                                // endforeach;
+                                 ?>
                                 </tbody>
                             </table>
                         </div>
