@@ -22,128 +22,135 @@ $faq_items = [
 
 <!-- ✅ FAQ SCHEMA JSON-LD -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    <?php foreach ($faq_items as $i => $faq): ?>
     {
-      "@type": "Question",
-      "name": "<?= addslashes($faq['question']) ?>",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "<?= addslashes($faq['answer']) ?>"
-      }
-    }<?= $i < count($faq_items) - 1 ? ',' : '' ?>
-    <?php endforeach; ?>
-  ]
-}
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            <?php foreach ($faq_items as $i => $faq): ?> {
+                    "@type": "Question",
+                    "name": "<?= addslashes($faq['question']) ?>",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "<?= addslashes($faq['answer']) ?>"
+                    }
+                }
+                <?= $i < count($faq_items) - 1 ? ',' : '' ?>
+            <?php endforeach; ?>
+        ]
+    }
 </script>
 
 <style>
-/* тЬЕ Mobile-specific spacing fixes */
-@media (max-width: 767px) {
-    .blog_details {
-        margin-top: -8px !important;      /* ЁЯФ╗ Header рд╕реЗ space рдФрд░ рдХрдо */
-        padding-top: 0px !important;
-        margin-bottom: 24px !important;   /* ЁЯФ╗ Footer рд╕реЗ рдереЛрдбрд╝рд╛ рдКрдкрд░ */
+    /* тЬЕ Mobile-specific spacing fixes */
+    @media (max-width: 767px) {
+        .blog_details {
+            margin-top: -8px !important;
+            /* ЁЯФ╗ Header рд╕реЗ space рдФрд░ рдХрдо */
+            padding-top: 0px !important;
+            margin-bottom: 24px !important;
+            /* ЁЯФ╗ Footer рд╕реЗ рдереЛрдбрд╝рд╛ рдКрдкрд░ */
+        }
+
+        .blog_thumb {
+            margin-bottom: 0px !important;
+            /* ЁЯФ╗ Image рдХреЗ рдиреАрдЪреЗ gap рдФрд░ рдХрдо */
+        }
     }
-    .blog_thumb {
-        margin-bottom: 0px !important;    /* ЁЯФ╗ Image рдХреЗ рдиреАрдЪреЗ gap рдФрд░ рдХрдо */
+
+    /* ЁЯУ▒ Mobile-specific blog title */
+    @media (max-width: 767px) {
+        .post_title {
+            font-size: 24px !important;
+            line-height: 30px !important;
+            font-weight: 500 !important;
+            letter-spacing: -0.2px;
+            margin-top: 20px !important;
+            text-align: left !important;
+        }
     }
-}
 
-/* ЁЯУ▒ Mobile-specific blog title */
-@media (max-width: 767px) {
-    .post_title {
-        font-size: 24px !important;
-        line-height: 30px !important;
-        font-weight: 500 !important;
-        letter-spacing: -0.2px;
-        margin-top: 20px !important;
-        text-align: left !important;
+    /* ЁЯТ╗ Desktop blog title */
+    @media (min-width: 768px) {
+        .post_title {
+            font-size: 30px !important;
+            line-height: 38px !important;
+            font-weight: 600 !important;
+            text-align: left !important;
+        }
     }
-}
 
-/* ЁЯТ╗ Desktop blog title */
-@media (min-width: 768px) {
-    .post_title {
-        font-size: 30px !important;
-        line-height: 38px !important;
-        font-weight: 600 !important;
-        text-align: left !important;
-    }
-}
-
-/* ЁЯУЦ Paragraph styling */
-.post_content,
-.post_content p,
-.post_content li,
-.post_content span {
-    font-size: 20px !important;
-    font-weight: 300 !important;
-    line-height: 32px !important;
-    color: #222 !important;
-    text-align: left !important;
-}
-
-/* ЁЯП╖я╕П Headings */
-.post_content h3,
-.post_content h4 {
-    font-size: 26px !important;
-    font-weight: 500 !important;
-    line-height: 36px !important;
-    margin-top: 24px !important;
-    text-align: left !important;
-}
-
-/* ЁЯФе Bold text */
-.post_content strong {
-    font-weight: 500 !important;
-}
-
-/* ЁЯУ▒ Mobile tweaks */
-@media (max-width: 767px) {
+    /* ЁЯУЦ Paragraph styling */
     .post_content,
     .post_content p,
     .post_content li,
     .post_content span {
-        font-size: 16px !important;
-        line-height: 26px !important;
+        font-size: 20px !important;
+        font-weight: 300 !important;
+        line-height: 32px !important;
+        color: #222 !important;
+        text-align: left !important;
     }
 
+    /* ЁЯП╖я╕П Headings */
     .post_content h3,
     .post_content h4 {
-        font-size: 20px !important;
-        line-height: 30px !important;
+        font-size: 26px !important;
+        font-weight: 500 !important;
+        line-height: 36px !important;
+        margin-top: 24px !important;
+        text-align: left !important;
+    }
+
+    /* ЁЯФе Bold text */
+    .post_content strong {
         font-weight: 500 !important;
     }
-}
 
-/* тЬЕ Blog Box Styling */
-.full-blog-box {
-    border: 1px solid #00b2a2;
-    border-radius: 14px;
-    padding: 24px;
-    margin-top: 30px;
-    background-color:  #f9f9f9;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.8;
-    color: #222;
-    max-width: 100%;
-    text-align: left;
-}
-.full-blog-box h2,
-.full-blog-box h3 {
-    font-weight: 600;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-.full-blog-box p {
-    font-size: 16px;
-    margin-bottom: 16px;
-}
+    /* ЁЯУ▒ Mobile tweaks */
+    @media (max-width: 767px) {
+
+        .post_content,
+        .post_content p,
+        .post_content li,
+        .post_content span {
+            font-size: 16px !important;
+            line-height: 26px !important;
+        }
+
+        .post_content h3,
+        .post_content h4 {
+            font-size: 20px !important;
+            line-height: 30px !important;
+            font-weight: 500 !important;
+        }
+    }
+
+    /* тЬЕ Blog Box Styling */
+    .full-blog-box {
+        border: 1px solid #00b2a2;
+        border-radius: 14px;
+        padding: 24px;
+        margin-top: 30px;
+        background-color: #f9f9f9;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.8;
+        color: #222;
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .full-blog-box h2,
+    .full-blog-box h3 {
+        font-weight: 600;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .full-blog-box p {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
 </style>
 
 <!-- ЁЯУ░ Blog body area start -->
@@ -165,10 +172,10 @@ $faq_items = [
                             </div>
                             <div class="blog_thumb">
                                 <a href="#">
-                                    <img src="<?= base_url('/public/uploads/'.$blog['image']) ?>"
-                                         alt="<?= $blog['title'] ?> - Blog | QASWA TELECOM - Mobile Repair in Mumbai"
-                                         title="<?= $blog['title'] ?> | QASWA TELECOM"
-                                         style="width: 100%; height: auto; border-radius: 10px;" loading="lazy">
+                                    <img src="<?= base_url('/public/uploads/' . $blog['image']) ?>"
+                                        alt="<?= $blog['title'] ?> - Blog | QASWA TELECOM - Mobile Repair in Mumbai"
+                                        title="<?= $blog['title'] ?> | QASWA TELECOM"
+                                        style="width: 100%; height: auto; border-radius: 10px;" loading="lazy">
                                 </a>
                             </div>
                             <figcaption class="blog_content">
@@ -186,3 +193,6 @@ $faq_items = [
 <!-- ЁЯУ░ Blog section area end -->
 
 <?= view('web/partials/footer.php') ?>
+
+
+

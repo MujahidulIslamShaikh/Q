@@ -19,7 +19,7 @@ class App extends BaseConfig
      */
     public string $sessionDriver = FileHandler::class;
     // public string $baseURL = 'http://localhost/Qaswa-main/';
-    public string $baseURL = 'http://192.168.17.115/Qaswa-main/';    // for mobile
+    public string $baseURL = 'http://192.168.17.115/Qaswa-main/';    // for both
 
     // public string $baseURL = 'https://qaswatelecom.com/';
 
