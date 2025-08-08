@@ -213,7 +213,7 @@ echo '<pre>';
 echo '</pre>';
 
 
-?>
+?>    
 <!--slider area start-->
 <section class="slider_section slider_section_two">
     <div class="slider_area owl-carousel">
